@@ -9,22 +9,22 @@ const fotos = [
 ]
 ---
 
-<section id="galeria" class="py-28 px-6 bg-[#FAF7F2]">
+<section id="galeria" class="py-28 px-6 bg-[#111111]">
   <div class="max-w-6xl mx-auto">
 
     <div class="text-center mb-16">
-      <p class="text-[#8B5E3C] text-sm uppercase tracking-[0.3em] mb-4">Galería</p>
-      <h2 class="font-serif text-4xl md:text-5xl font-bold text-[#2C1A0E]">El camino en imágenes</h2>
-      <div class="w-12 h-0.5 bg-[#4A7C59] mx-auto mt-6"></div>
+      <p class="text-[#F97316] text-xs uppercase tracking-[0.5em] mb-4 font-semibold">Galería</p>
+      <h2 class="font-sans text-5xl md:text-6xl font-black uppercase text-white">El camino en imágenes</h2>
+      <div class="w-12 h-1 bg-[#F97316] mx-auto mt-6"></div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
       {fotos.map((foto, i) => (
-        <div class={`overflow-hidden bg-[#8B5E3C]/10 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
+        <div class={`overflow-hidden bg-white/5 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
           <img
             src={foto.src}
             alt={foto.alt}
-            class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
+            class="w-full h-full object-cover aspect-square grayscale hover:grayscale-0 hover:scale-105 transition-all duration-500"
           />
         </div>
       ))}

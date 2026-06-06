@@ -27,7 +27,6 @@ Crear un sitio web personal para Francisco que:
 ## Referencia de diseño
 
 - **Sitio de referencia:** https://www.project226.xyz/ — sitio sobre el camino de dos personas hacia un Ironman 70.3. Concepto similar: viaje personal + deporte extremo + documentación de proceso.
-- **Estilo buscado:** diario de viaje, cuaderno de explorador — personal, cálido y aventurero
 
 ---
 
@@ -45,13 +44,13 @@ src/
   pages/
     index.astro        ← página principal (única)
   components/
+    Navbar.astro
     Hero.astro
     SobreMi.astro
     Desafio.astro
     Galeria.astro
-    Redes.astro
+    Marcas.astro       ← NUEVO: marcas que se suman a su comunidad
     Contacto.astro
-    Navbar.astro
   layouts/
     Base.astro
 public/
@@ -62,16 +61,17 @@ public/
 
 ## Identidad visual
 
-**Estética:** Explorador terroso — diario de viaje, cuaderno de explorador
+**Estética:** Aventurero oscuro — National Geographic meets Nike
 
 | Elemento | Valor |
 |----------|-------|
-| Fondo principal | `#FAF7F2` (crema) |
-| Acento 1 | `#8B5E3C` (marrón) |
-| Acento 2 | `#4A7C59` (verde oliva) |
-| Tipografía títulos | Serif (ej: Playfair Display, Lora) |
-| Tipografía cuerpo | Sans-serif (ej: Inter, DM Sans) |
-| Vibe | National Geographic · diario de explorador · humano y cercano |
+| Fondo principal | `#0a0a0a` (negro) |
+| Fondo secundario | `#111111` (negro suave) |
+| Acento | `#F97316` (naranja fuego) |
+| Texto | `#f5f5f5` (blanco) |
+| Tipografía | Sans-serif black/900, uppercase, impacto visual |
+| Vibe | Bold, dramático, energético, aventurero |
+| Fotos galería | Blanco y negro por defecto, color al hover |
 
 ---
 
@@ -81,13 +81,67 @@ public/
 
 | Sección | Importancia | Descripción |
 |---------|-------------|-------------|
-| Hero | ★★★★★ | Presentación impactante de Francisco, foto protagonista, frase que lo define |
+| Hero | ★★★★★ | Presentación impactante de Francisco, foto protagonista, tipografía enorme |
 | Sobre mí | ★★★★★ | Quién es Francisco, sus valores, su filosofía de vida |
-| El Desafío (Ironman) | ★★★★★ | El Medio Ironman 70.3 — el camino, el entrenamiento, la meta a finales de junio 2026 |
+| El Desafío (Ironman) | ★★★★★ | El Medio Ironman 70.3 — 1.9km nado · 90km ciclismo · 21.1km carrera. Solo, a finales de junio 2026 |
 | Galería | ★★★★☆ | Fotos de sus aventuras y entrenamientos |
-| Redes + Contacto | ★★★★★ | Links a Instagram y otras redes. Info de contacto para colaboraciones |
+| Marcas | ★★★★☆ | Las marcas que se van sumando a su comunidad / sponsors |
+| Contacto | ★★★★★ | TODAS sus redes sociales + info para colaboraciones |
 
-**Idea futura (no incluida ahora):** Bitácora / Blog — Francisco podría escribir actualizaciones de sus aventuras y entrenamiento. A implementar en una segunda etapa si Ignacio y Francisco lo desean.
+**Idea futura:** Bitácora / Blog — actualizaciones de aventuras y entrenamiento. Segunda etapa.
+
+---
+
+## Datos de contacto pendientes de completar
+
+> ⚠️ **FALTA INFORMACIÓN** — Hay que pedirle a Francisco (o averiguar) todos sus datos de contacto y redes sociales antes de terminar la sección Contacto.
+
+| Plataforma | Estado | Valor |
+|------------|--------|-------|
+| Instagram | ✅ Confirmado | [@franciscoexplora](https://www.instagram.com/franciscoexplora) |
+| TikTok | ❓ Desconocido | Por confirmar |
+| YouTube | ❓ Desconocido | Por confirmar |
+| Strava | ❓ Desconocido | Por confirmar (muy relevante para el Ironman) |
+| Email de contacto | ❓ Desconocido | Para colaboraciones con marcas |
+| Otras redes | ❓ Desconocido | Por confirmar |
+
+---
+
+## Marcas / Sponsors
+
+> La sección de marcas mostrará los logos de las marcas que se van sumando a la comunidad de Francisco.
+
+- **Estado actual:** Sin marcas confirmadas todavía
+- **Diseño:** Grilla de logos sobre fondo oscuro, con hover effect
+- **Flujo:** Cuando Francisco confirme una marca, Ignacio agrega el logo a `public/images/marcas/` y se actualiza el componente `Marcas.astro`
+
+---
+
+## Imágenes pendientes de cargar
+
+> ⚠️ Todas las fotos deben colocarse en `public/images/`
+
+| Archivo | Uso | Estado |
+|---------|-----|--------|
+| `hero.jpg` | Foto de fondo del Hero (pantalla completa) | ❌ Falta |
+| `sobre-mi.jpg` | Foto de Francisco en "Sobre mí" | ❌ Falta |
+| `galeria-1.jpg` | Galería — foto destacada (grande) | ❌ Falta |
+| `galeria-2.jpg` a `galeria-6.jpg` | Galería — fotos secundarias | ❌ Falta |
+| `public/images/marcas/` | Logos de marcas sponsors | ❌ Falta (sin marcas aún) |
+
+---
+
+## Pendiente / TODO
+
+- [ ] Conseguir todas las redes sociales de Francisco (ver tabla arriba)
+- [ ] Conseguir email de contacto para colaboraciones
+- [ ] Cargar todas las fotos (`hero.jpg`, `sobre-mi.jpg`, `galeria-1` al `6`)
+- [ ] Construir el componente `Marcas.astro`
+- [ ] Agregar navegación móvil (menú hamburguesa)
+- [ ] Revisar y personalizar todos los textos con info real de Francisco
+- [ ] Desplegar en Vercel
+- [ ] Definir dominio (¿franciscoexplora.com o similar?)
+- [ ] Segunda etapa: Bitácora / Blog
 
 ---
 
@@ -106,17 +160,10 @@ public/
 | Fecha | Descripción |
 |-------|-------------|
 | 2026-06-05 | Inicio del proyecto. Creación del repositorio Git y GitHub. README y documentación base. |
-| 2026-06-05 | Definición de stack (Astro + Tailwind), identidad visual (terroso), estructura (1 sola página) y secciones. |
-| 2026-06-05 | Inicialización del proyecto Astro con plantilla minimal. Instalación de dependencias. |
-
----
-
-## Próximos pasos
-
-1. Instalar y configurar Tailwind CSS
-2. Crear el layout base (`Base.astro`) con la paleta de colores
-3. Crear los componentes de cada sección
-4. Desarrollar el sitio sección por sección empezando por Hero
+| 2026-06-05 | Definición de stack (Astro + Tailwind), identidad visual, estructura (1 sola página) y secciones. |
+| 2026-06-05 | Inicialización del proyecto Astro. Instalación de Tailwind. Todos los componentes creados. |
+| 2026-06-05 | Cambio de estética de "Explorador terroso" a "Aventurero oscuro" (fondo negro + naranja). |
+| 2026-06-05 | Decisión: agregar sección Marcas/Sponsors. Pendiente de construir. |
 
 ---
 

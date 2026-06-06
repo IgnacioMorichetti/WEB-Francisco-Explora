@@ -91,23 +91,32 @@ public/
 
 ---
 
+## Comandos útiles
+
+| Comando | Acción |
+|---------|--------|
+| `npm run dev` | Servidor de desarrollo en `localhost:4321` |
+| `npm run build` | Genera el sitio para producción en `./dist/` |
+| `npm run preview` | Previsualiza el build antes de subir |
+
+---
+
 ## Historial de decisiones y cambios
 
 | Fecha | Descripción |
 |-------|-------------|
 | 2026-06-05 | Inicio del proyecto. Creación del repositorio Git y GitHub. README y documentación base. |
 | 2026-06-05 | Definición de stack (Astro + Tailwind), identidad visual (terroso), estructura (1 sola página) y secciones. |
+| 2026-06-05 | Inicialización del proyecto Astro con plantilla minimal. Instalación de dependencias. |
 
 ---
 
 ## Próximos pasos
 
-1. Inicializar el proyecto Astro en la carpeta del repo
-2. Configurar Tailwind CSS
-3. Crear el layout base (`Base.astro`) con la paleta de colores
-4. Desarrollar la sección Hero
-5. Ir construyendo sección por sección
-6. Ver referencia visual de project226.xyz en el navegador para tomar más inspiración
+1. Instalar y configurar Tailwind CSS
+2. Crear el layout base (`Base.astro`) con la paleta de colores
+3. Crear los componentes de cada sección
+4. Desarrollar el sitio sección por sección empezando por Hero
 
 ---
 

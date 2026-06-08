@@ -10,7 +10,7 @@ Francisco es el hermano de Ignacio (el usuario). Un hombre lleno de vida, espír
 
 Quiere convertirse en **influencer** en Instagram y otras redes sociales, siendo conocido por su espíritu aventurero y su autenticidad. Su perfil de Instagram es [@franciscoexplora](https://www.instagram.com/franciscoexplora).
 
-**La web es una sorpresa de Ignacio para Francisco. Francisco no sabe que se la están haciendo.**
+**Estado:** Francisco ya está al tanto de la web (antes era sorpresa). Participa activamente y da feedback constante sobre el sitio.
 
 ---
 
@@ -19,7 +19,7 @@ Quiere convertirse en **influencer** en Instagram y otras redes sociales, siendo
 Crear un sitio web personal para Francisco que:
 - Refleje su personalidad: explorador, humilde, auténtico, divertido
 - Acompañe su crecimiento como influencer
-- Documente su desafío principal: **correr un Medio Ironman (70.3) de forma independiente a finales de junio de 2026**
+- Documente su desafío principal: **correr un Medio Ironman (70.3) de forma independiente el 28 de junio de 2026**, con una propuesta abierta para que otros se sumen a correrlo con él
 - Sirva como hub central de su presencia digital (Instagram y otras redes)
 
 ---
@@ -61,16 +61,18 @@ public/
 
 ## Identidad visual
 
-**Estética:** Aventurero oscuro — National Geographic meets Nike
+**Estética:** Explorador terroso — diario de viaje, cuaderno de explorador
 
 | Elemento | Valor |
 |----------|-------|
-| Fondo principal | `#0a0a0a` (negro) |
-| Fondo secundario | `#111111` (negro suave) |
-| Acento | `#F97316` (naranja fuego) |
-| Texto | `#f5f5f5` (blanco) |
-| Tipografía | Sans-serif black/900, uppercase, impacto visual |
-| Vibe | Bold, dramático, energético, aventurero |
+| Fondo principal | `#FAF7F2` (crema) |
+| Fondo secundario | Blanco |
+| Acento 1 | `#8B5E3C` (marrón) |
+| Acento 2 | `#4A7C59` (oliva) |
+| Texto | `#2C1A0E` (marrón oscuro) / `#7A6652` (suave) |
+| Tipografía títulos | Serif (Playfair Display) |
+| Tipografía cuerpo | Sans-serif (Inter) |
+| Vibe | Cálido, auténtico, aventurero, atemporal |
 | Fotos galería | Blanco y negro por defecto, color al hover |
 
 ---
@@ -83,7 +85,7 @@ public/
 |---------|-------------|-------------|
 | Hero | ★★★★★ | Presentación impactante de Francisco, foto protagonista, tipografía enorme |
 | Sobre mí | ★★★★★ | Quién es Francisco, sus valores, su filosofía de vida |
-| El Desafío (Ironman) | ★★★★★ | El Medio Ironman 70.3 — 1.9km nado · 90km ciclismo · 21.1km carrera. Solo, a finales de junio 2026 |
+| El Desafío (Ironman) | ★★★★★ | **Sección prioritaria.** Medio Ironman 70.3 — 1.9km nado · 90km ciclismo · 21.1km carrera, el **28 de junio 2026**. Incluye botón **"Sumate al desafío"** (→ grupo de WhatsApp) y **"Sos una marca"** (→ contacto) |
 | Galería | ★★★★☆ | Fotos de sus aventuras y entrenamientos |
 | Marcas | ★★★★☆ | Las marcas que se van sumando a su comunidad / sponsors |
 | Contacto | ★★★★★ | TODAS sus redes sociales + info para colaboraciones |
@@ -164,6 +166,8 @@ public/
 | 2026-06-05 | Inicialización del proyecto Astro. Instalación de Tailwind. Todos los componentes creados. |
 | 2026-06-05 | Cambio de estética de "Explorador terroso" a "Aventurero oscuro" (fondo negro + naranja). |
 | 2026-06-05 | Decisión: agregar sección Marcas/Sponsors. Pendiente de construir. |
+| 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
+| 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
 
 ---
 

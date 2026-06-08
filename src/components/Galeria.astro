@@ -9,18 +9,18 @@ const fotos = [
 ]
 ---
 
-<section id="galeria" class="py-28 px-6 bg-[#111111]">
+<section id="galeria" class="py-28 px-6 bg-white">
   <div class="max-w-6xl mx-auto">
 
     <div class="text-center mb-16">
-      <p class="text-[#F97316] text-xs uppercase tracking-[0.5em] mb-4 font-semibold">Galería</p>
-      <h2 class="font-sans text-5xl md:text-6xl font-black uppercase text-white">El camino en imágenes</h2>
-      <div class="w-12 h-1 bg-[#F97316] mx-auto mt-6"></div>
+      <p class="text-marron text-xs uppercase tracking-[0.5em] mb-4 font-semibold">Galería</p>
+      <h2 class="font-serif text-5xl md:text-6xl font-black uppercase text-texto">El camino en imágenes</h2>
+      <div class="w-12 h-1 bg-marron mx-auto mt-6"></div>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
       {fotos.map((foto, i) => (
-        <div class={`overflow-hidden bg-white/5 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
+        <div class={`overflow-hidden bg-marron/5 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
           <img
             src={foto.src}
             alt={foto.alt}

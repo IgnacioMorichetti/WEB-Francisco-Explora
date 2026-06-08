@@ -25,10 +25,10 @@ Contestá lo que puedas debajo de cada pregunta. No hace falta que estén todas.
 5. Link del grupo de WhatsApp para el botón "Sumate al desafío":
    →
 
-6. El botón "Sos una marca", ¿a dónde lleva? (¿tu WhatsApp? ¿un email?)
+6. El botón "Sos una marca" (para que las marcas se sumen), ¿a dónde lleva? (¿tu WhatsApp? ¿un email?). Pasame el link
    →
 
-7. ¿Dónde es la carrera y cómo se llama el evento?
+7. ¿Dónde es la carrera y cómo se llama el evento?, si es que le vas a poner un nombre. Es el 28 de Junio ¿verdad?
    →
 
 8. ¿Por qué este desafío? ¿Qué significa para vos?
@@ -36,10 +36,6 @@ Contestá lo que puedas debajo de cada pregunta. No hace falta que estén todas.
 
 9. ¿Tenés un objetivo de tiempo o una meta personal?
    →
-
-10. ¿Cómo estás entrenando? (cuántas horas, si tenés coach, etc.)
-    →
-
 ---
 
 ## Fotos
@@ -47,7 +43,7 @@ Contestá lo que puedas debajo de cada pregunta. No hace falta que estén todas.
 11. ¿Qué fotos tenés para usar y qué te gustaría que muestren? (aventuras, entrenamientos, viajes)
     →
 
-12. ¿Las tenés en buena calidad? ¿Son tuyas o hay que dar crédito a alguien?
+12. ¿Las tenés en buena calidad? ¿Son tuyas o hay que dar crédito a alguien (Nombrarlos por canjes o cosas así)?
     →
 
 13. ¿Tenés videos que quieras incluir?
@@ -73,9 +69,6 @@ Contestá lo que puedas debajo de cada pregunta. No hace falta que estén todas.
 17. ¿Hay alguna marca que ya te acompañe?
     →
 
-18. ¿Qué marcas te gustaría sumar?
-    →
-
 ---
 
 ## Gustos para la web
@@ -89,5 +82,5 @@ Contestá lo que puedas debajo de cada pregunta. No hace falta que estén todas.
 21. ¿Cómo querés que suene el texto de la web? (cercano, épico, divertido, inspirador...)
     →
 
-22. ¿Hay algo que NO quieras que aparezca en la web?
+22. ¿Hay algo que NO quieras que aparezca en la web? (Muy determinante)
     →

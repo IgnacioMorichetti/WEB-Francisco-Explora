@@ -1,0 +1,66 @@
+---
+import Base from '../../layouts/Base.astro'
+import { paletas } from '../../data/paletas.js'
+---
+
+<Base title="Bocetos de color · Francisco Explora">
+  <main class="min-h-screen px-6 py-16" style="background:#1c1c1a;color:#f0ede6;font-family:'Inter',system-ui,sans-serif;">
+    <div class="max-w-6xl mx-auto">
+
+      <header class="text-center mb-14">
+        <p class="text-xs uppercase tracking-[0.4em] mb-4" style="color:#b9a489;">Para mostrarle a Francisco</p>
+        <h1 class="text-4xl md:text-6xl font-black mb-5" style="font-family:'Playfair Display',serif;">
+          Bocetos de color
+        </h1>
+        <p class="max-w-2xl mx-auto text-base md:text-lg" style="color:#bdb6aa;">
+          {paletas.length} variantes de paleta para la web. Tocá cualquiera para ver la página
+          completa con esos colores. La marcada como <span style="color:#d98b5f;">actual</span> es la
+          que está publicada ahora.
+        </p>
+      </header>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {paletas.map((p) => (
+          <a
+            href={`/bocetos/${p.slug}`}
+            class="group block rounded-lg overflow-hidden border transition-all duration-300 hover:-translate-y-1"
+            style="border-color:#3a3a36;background:#252522;"
+          >
+            {/* Vista previa de la paleta */}
+            <div class="h-28 flex" style={`background:${p.vars.selva};`}>
+              <div class="flex-1 flex items-end p-3 gap-2">
+                <span class="w-8 h-8 rounded-full shadow" style={`background:${p.vars.musgo};`}></span>
+                <span class="w-8 h-8 rounded-full shadow" style={`background:${p.vars.tierra};`}></span>
+                <span class="w-8 h-8 rounded-full shadow border" style={`background:${p.vars.selva2};border-color:${p.vars.selva3};`}></span>
+                <span class="ml-auto text-2xl font-black" style={`color:${p.vars.crema};font-family:'Playfair Display',serif;`}>Aa</span>
+              </div>
+            </div>
+
+            <div class="p-5">
+              <div class="flex items-center gap-2 mb-1">
+                <h2 class="text-lg font-bold" style="font-family:'Playfair Display',serif;color:#f0ede6;">{p.nombre}</h2>
+                {p.actual && (
+                  <span class="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full" style="background:#d98b5f;color:#1c1c1a;font-weight:700;">Actual</span>
+                )}
+              </div>
+              <p class="text-sm mb-4" style="color:#a9a499;">{p.descripcion}</p>
+              <div class="flex gap-1.5 mb-4">
+                {Object.values(p.vars).map((c) => (
+                  <span class="flex-1 h-4 rounded-sm" style={`background:${c};`} title={c}></span>
+                ))}
+              </div>
+              <span class="text-xs uppercase tracking-widest font-bold inline-flex items-center gap-1 group-hover:gap-2 transition-all" style="color:#d98b5f;">
+                Ver boceto completo →
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <footer class="text-center mt-16 text-sm" style="color:#7e7a70;">
+        <a href="/" class="underline hover:no-underline">← Volver al sitio</a>
+      </footer>
+
+    </div>
+  </main>
+</Base>

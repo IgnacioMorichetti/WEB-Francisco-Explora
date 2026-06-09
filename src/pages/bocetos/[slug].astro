@@ -1,0 +1,74 @@
+---
+import Base from '../../layouts/Base.astro'
+import Navbar from '../../components/Navbar.astro'
+import Hero from '../../components/Hero.astro'
+import Desafio from '../../components/Desafio.astro'
+import SobreMi from '../../components/SobreMi.astro'
+import Galeria from '../../components/Galeria.astro'
+import Contacto from '../../components/Contacto.astro'
+import { paletas } from '../../data/paletas.js'
+
+export function getStaticPaths() {
+  return paletas.map((p, i) => ({
+    params: { slug: p.slug },
+    props: {
+      paleta: p,
+      prev: paletas[(i - 1 + paletas.length) % paletas.length],
+      next: paletas[(i + 1) % paletas.length],
+      indice: i + 1,
+      total: paletas.length,
+    },
+  }))
+}
+
+const { paleta, prev, next, indice, total } = Astro.props
+const v = paleta.vars
+
+// Override de las variables del tema para re-skinear toda la página.
+const css = `:root{
+  --color-selva:${v.selva};
+  --color-selva-2:${v.selva2};
+  --color-selva-3:${v.selva3};
+  --color-musgo:${v.musgo};
+  --color-hoja:${v.hoja};
+  --color-tierra:${v.tierra};
+  --color-crema:${v.crema};
+  --color-suave:${v.suave};
+}`
+---
+
+<Base title={`Boceto: ${paleta.nombre} · Francisco Explora`}>
+  <style is:inline set:html={css}></style>
+
+  <Navbar />
+  <main class="pb-24">
+    <Hero />
+    <Desafio />
+    <SobreMi />
+    <Galeria />
+    <Contacto />
+  </main>
+
+  {/* Barra de navegación de bocetos (colores neutros, siempre visible) */}
+  <div
+    class="fixed bottom-0 left-0 right-0 z-[100] flex items-center justify-between gap-3 px-4 sm:px-6 py-3 text-sm"
+    style="background:rgba(20,20,18,0.92);backdrop-filter:blur(8px);color:#f0ede6;border-top:1px solid #3a3a36;"
+  >
+    <a href="/bocetos" class="shrink-0 inline-flex items-center gap-1.5 hover:opacity-80" style="color:#d98b5f;">
+      <span class="text-base">⊞</span> <span class="hidden sm:inline uppercase tracking-widest text-xs font-bold">Todos</span>
+    </a>
+
+    <div class="flex items-center gap-2 min-w-0">
+      <span class="hidden sm:inline text-xs" style="color:#8a857b;">{indice}/{total}</span>
+      <span class="font-bold truncate" style="font-family:'Playfair Display',serif;">{paleta.nombre}</span>
+      {paleta.actual && (
+        <span class="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full shrink-0" style="background:#d98b5f;color:#1c1c1a;font-weight:700;">Actual</span>
+      )}
+    </div>
+
+    <div class="flex items-center gap-2 shrink-0">
+      <a href={`/bocetos/${prev.slug}`} class="px-3 py-1.5 rounded border hover:opacity-80 text-xs uppercase tracking-widest font-bold" style="border-color:#3a3a36;" title={prev.nombre}>←</a>
+      <a href={`/bocetos/${next.slug}`} class="px-3 py-1.5 rounded border hover:opacity-80 text-xs uppercase tracking-widest font-bold" style="border-color:#3a3a36;" title={next.nombre}>→</a>
+    </div>
+  </div>
+</Base>

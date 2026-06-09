@@ -1,26 +1,28 @@
 ---
+// Fotos propias de Francisco — aventuras, paisajes y energía feliz.
+// (Pendiente de que Francisco pase las imágenes finales.)
 const fotos = [
-  { src: '/images/galeria-1.jpg', alt: 'Aventura 1' },
-  { src: '/images/galeria-2.jpg', alt: 'Aventura 2' },
-  { src: '/images/galeria-3.jpg', alt: 'Aventura 3' },
-  { src: '/images/galeria-4.jpg', alt: 'Aventura 4' },
-  { src: '/images/galeria-5.jpg', alt: 'Aventura 5' },
-  { src: '/images/galeria-6.jpg', alt: 'Aventura 6' },
+  { src: '/images/galeria-1.jpg', alt: 'Francisco en una aventura' },
+  { src: '/images/galeria-2.jpg', alt: 'Paisaje explorado' },
+  { src: '/images/galeria-3.jpg', alt: 'Entrenamiento' },
+  { src: '/images/galeria-4.jpg', alt: 'Aventura al aire libre' },
+  { src: '/images/galeria-5.jpg', alt: 'Paisaje de montaña' },
+  { src: '/images/galeria-6.jpg', alt: 'En movimiento' },
 ]
 ---
 
-<section id="galeria" class="py-28 px-6 bg-white">
+<section id="galeria" class="py-28 px-6 bg-selva-2">
   <div class="max-w-6xl mx-auto">
 
     <div class="text-center mb-16">
-      <p class="text-marron text-xs uppercase tracking-[0.5em] mb-4 font-semibold">Galería</p>
-      <h2 class="font-serif text-5xl md:text-6xl font-black uppercase text-texto">El camino en imágenes</h2>
-      <div class="w-12 h-1 bg-marron mx-auto mt-6"></div>
+      <p class="text-musgo text-xs uppercase tracking-[0.5em] mb-4 font-semibold">Galería</p>
+      <h2 class="font-serif text-5xl md:text-6xl font-black uppercase">Aventuras y paisajes</h2>
+      <div class="w-12 h-1 bg-tierra mx-auto mt-6"></div>
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
       {fotos.map((foto, i) => (
-        <div class={`overflow-hidden bg-marron/5 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
+        <div class={`overflow-hidden bg-selva-3 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
           <img
             src={foto.src}
             alt={foto.alt}

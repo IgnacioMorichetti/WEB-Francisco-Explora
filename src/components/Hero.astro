@@ -1,34 +1,47 @@
 ---
+const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi_t'
 ---
 
-<section id="inicio" class="relative min-h-screen flex items-center justify-center bg-crema overflow-hidden">
+<section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Foto de fondo -->
-  <div class="absolute inset-0 bg-gradient-to-b from-crema/40 via-crema/10 to-crema z-10"></div>
-  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-40 grayscale"></div>
+  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-50"></div>
+  <!-- Veladura selvática para legibilidad -->
+  <div class="absolute inset-0 bg-gradient-to-b from-selva/70 via-selva/60 to-selva z-10"></div>
 
   <!-- Contenido -->
-  <div class="relative z-20 text-center text-texto px-6 max-w-5xl mx-auto">
-    <p class="text-marron text-xs uppercase tracking-[0.5em] mb-8 font-sans font-semibold">
-      Explorador · Atleta · Soñador
+  <div class="relative z-20 text-center px-6 max-w-5xl mx-auto">
+    <p class="text-musgo text-xs uppercase tracking-[0.5em] mb-8 font-semibold">
+      Explorando la vida
     </p>
     <h1 class="font-serif text-7xl md:text-[10rem] font-black leading-none mb-8 uppercase tracking-tight">
       Francisco<br />
-      <span class="text-marron">Explora</span>
+      <span class="text-musgo">Explora</span>
     </h1>
-    <p class="text-texto-suave text-lg md:text-xl max-w-xl mx-auto mb-12 font-light leading-relaxed">
-      Cada aventura es una nueva página. Cada paso, una historia que contar.
+    <p class="text-suave text-lg md:text-2xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+      Gracias por un día más en el planeta Tierra.<br class="hidden md:block" />
+      <span class="text-crema">Movimiento trae más movimiento.</span>
     </p>
-    <a
-      href="#sobre-mi"
-      class="inline-block bg-marron text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-oliva transition-all duration-300"
-    >
-      Conocerme
-    </a>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href={WHATSAPP_GRUPO}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block bg-musgo text-selva px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-hoja transition-all duration-300"
+      >
+        Sumate al desafío
+      </a>
+      <a
+        href="#sobre-mi"
+        class="inline-block border border-tierra text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-tierra/20 transition-all duration-300"
+      >
+        Mi historia
+      </a>
+    </div>
   </div>
 
   <!-- Scroll indicator -->
-  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-texto-suave/60">
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 text-suave/60">
     <span class="text-xs uppercase tracking-widest">Scroll</span>
-    <div class="w-px h-12 bg-marron/50 animate-pulse"></div>
+    <div class="w-px h-12 bg-musgo/50 animate-pulse"></div>
   </div>
 </section>

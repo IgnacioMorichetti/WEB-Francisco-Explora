@@ -63,16 +63,21 @@ public/
 
 **Estética:** Explorador terroso — diario de viaje, cuaderno de explorador
 
+**Estética:** Natural / selvático — verde oscuro + marrón tierra (pedido explícito de Francisco, 2026-06-08). Reemplaza la paleta clara "Explorador terroso".
+
 | Elemento | Valor |
 |----------|-------|
-| Fondo principal | `#FAF7F2` (crema) |
-| Fondo secundario | Blanco |
-| Acento 1 | `#8B5E3C` (marrón) |
-| Acento 2 | `#4A7C59` (oliva) |
-| Texto | `#2C1A0E` (marrón oscuro) / `#7A6652` (suave) |
+| Fondo principal | `#0F2117` (verde noche de selva) |
+| Fondo secundario | `#16301F` (verde oscuro / paneles) |
+| Panel hover | `#1E3D2A` |
+| Acento verde (musgo) | `#7FB069` |
+| Acento verde lima (hoja) | `#A7C957` |
+| Acento marrón (tierra) | `#C08552` |
+| Texto principal | `#F4EFE6` (blanco cálido) |
+| Texto suave | `#A9B8A0` (verde salvia) |
 | Tipografía títulos | Serif (Playfair Display) |
 | Tipografía cuerpo | Sans-serif (Inter) |
-| Vibe | Cálido, auténtico, aventurero, atemporal |
+| Vibe | Natural, orgánico, aventurero, vivo |
 | Fotos galería | Blanco y negro por defecto, color al hover |
 
 ---
@@ -85,7 +90,7 @@ public/
 |---------|-------------|-------------|
 | Hero | ★★★★★ | Presentación impactante de Francisco, foto protagonista, tipografía enorme |
 | Sobre mí | ★★★★★ | Quién es Francisco, sus valores, su filosofía de vida |
-| El Desafío (Ironman) | ★★★★★ | **Sección prioritaria.** Medio Ironman 70.3 — 1.9km nado · 90km ciclismo · 21.1km carrera, el **28 de junio 2026**. Incluye botón **"Sumate al desafío"** (→ grupo de WhatsApp) y **"Sos una marca"** (→ contacto) |
+| El Desafío ("Explora") | ★★★★★ | **Sección prioritaria.** La carrera se llama **"Explora"**, es el **28 de junio de 2026 en Potrerillos (Mendoza)** — 1.9km nado · 90km ciclismo · 21.1km carrera. Motivación real de Francisco: "fue la excusa perfecta para empezar, el origen". Objetivo: "terminarlo y pasarla bien". Incluye botón **"Sumate al desafío"** (→ grupo de WhatsApp, link confirmado) y **"Sos una marca"** (→ su WhatsApp, número pendiente; interino: email) |
 | Galería | ★★★★☆ | Fotos de sus aventuras y entrenamientos |
 | Marcas | ★★★★☆ | Las marcas que se van sumando a su comunidad / sponsors |
 | Contacto | ★★★★★ | TODAS sus redes sociales + info para colaboraciones |
@@ -98,14 +103,18 @@ public/
 
 > ⚠️ **FALTA INFORMACIÓN** — Hay que pedirle a Francisco (o averiguar) todos sus datos de contacto y redes sociales antes de terminar la sección Contacto.
 
+> ✅ **Confirmado (2026-06-09):** el usuario en TODAS las redes es `franciscoexplora`. Red prioritaria a crecer: **Instagram**.
+
 | Plataforma | Estado | Valor |
 |------------|--------|-------|
-| Instagram | ✅ Confirmado | [@franciscoexplora](https://www.instagram.com/franciscoexplora) |
-| TikTok | ❓ Desconocido | Por confirmar |
-| YouTube | ❓ Desconocido | Por confirmar |
-| Strava | ❓ Desconocido | Por confirmar (muy relevante para el Ironman) |
-| Email de contacto | ❓ Desconocido | Para colaboraciones con marcas |
-| Otras redes | ❓ Desconocido | Por confirmar |
+| Instagram (prioritaria) | ✅ Confirmado | [@franciscoexplora](https://www.instagram.com/franciscoexplora) |
+| TikTok | ✅ Confirmado | [@franciscoexplora](https://www.tiktok.com/@franciscoexplora) |
+| YouTube | ✅ Confirmado | [@franciscoexplora](https://www.youtube.com/@franciscoexplora) |
+| Facebook | ✅ Confirmado | [franciscoexplora](https://www.facebook.com/franciscoexplora) |
+| Strava | ⚠️ Usuario sí, URL pendiente | `franciscoexplora` — falta el URL real (Strava usa `/athletes/ID` numérico) |
+| Email de contacto | ⚠️ Provisional | `aventureate@gmail.com` (Francisco lo quiere cambiar) |
+| WhatsApp grupo "Explora" | ✅ Confirmado | Link del grupo (botón "Sumate al desafío") |
+| WhatsApp personal (marcas) | ❌ Pendiente | Número para el botón "Sos una marca" |
 
 ---
 
@@ -135,12 +144,15 @@ public/
 
 ## Pendiente / TODO
 
-- [ ] Conseguir todas las redes sociales de Francisco (ver tabla arriba)
-- [ ] Conseguir email de contacto para colaboraciones
-- [ ] Cargar todas las fotos (`hero.jpg`, `sobre-mi.jpg`, `galeria-1` al `6`)
-- [ ] Construir el componente `Marcas.astro`
-- [ ] Agregar navegación móvil (menú hamburguesa)
-- [ ] Revisar y personalizar todos los textos con info real de Francisco
+- [x] Conseguir todas las redes sociales de Francisco (usuario `franciscoexplora` en todas)
+- [ ] Conseguir el **URL real de Strava** (perfil con ID numérico)
+- [ ] Conseguir el **número de WhatsApp personal** de Francisco para el botón "Sos una marca"
+- [ ] Confirmar email definitivo (el actual `aventureate@gmail.com` es provisional)
+- [ ] Cargar todas las fotos (`hero.jpg`, `sobre-mi.jpg`, `galeria-1` al `6`) — Francisco las pasa
+- [x] Agregar navegación móvil (menú hamburguesa)
+- [x] Revisar y personalizar todos los textos con info real de Francisco
+- [ ] Marcas/Sponsors: ninguna confirmada aún (Francisco "lo tiene que hablar con ellos"). Sección no construida; el botón "Sos una marca" cubre el contacto por ahora.
+- [ ] Videos: Francisco confirmó que tiene, los tiene que buscar
 - [ ] Desplegar en Vercel
 - [ ] Definir dominio (¿franciscoexplora.com o similar?)
 - [ ] Segunda etapa: Bitácora / Blog
@@ -168,6 +180,7 @@ public/
 | 2026-06-05 | Decisión: agregar sección Marcas/Sponsors. Pendiente de construir. |
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
+| 2026-06-09 | Francisco respondió la toma de requisitos (`Preguntas_y_Respuestas_Francisco_Explora.pdf`). **Página construida con su info real:** paleta selvática implementada (hex definidos), historia real (nacido 18-dic-2000), lema ("Gracias por un día más en el planeta Tierra" / "Movimiento trae más movimiento"), carrera **"Explora" en Potrerillos**, motivación y objetivo en su voz auténtica ("la excusa perfecta para empezar" / "terminarlo y pasarla bien"), redes (`franciscoexplora` en todas), menú móvil hamburguesa. Build OK. Pendientes: WhatsApp personal (marcas), URL de Strava, fotos y videos. |
 
 ---
 

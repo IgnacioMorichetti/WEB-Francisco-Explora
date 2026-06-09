@@ -61,24 +61,25 @@ public/
 
 ## Identidad visual
 
-**Estética:** Explorador terroso — diario de viaje, cuaderno de explorador
+**Estética:** "Piedra y siena" — **fondo claro de piedra/taupe** (con color propio, no blanco ni crema), acento **siena quemado** y apoyo **nogal**. Cálida, editorial, terrosa y luminosa; pensada para que las fotos de Francisco manden. Elegida por Ignacio el 2026-06-09 tras varias iteraciones.
 
-**Estética:** Natural / selvático — verde oscuro + marrón tierra (pedido explícito de Francisco, 2026-06-08). Reemplaza la paleta clara "Explorador terroso".
+> Nota técnica: por estabilidad del código los tokens CSS conservan sus nombres, pero su rol cambió. Ahora `--color-selva` = FONDO CLARO, `--color-crema` = TEXTO OSCURO, `--color-musgo` = siena (acento 1) y `--color-tierra` = nogal (acento 2).
 
-| Elemento | Valor |
-|----------|-------|
-| Fondo principal | `#0F2117` (verde noche de selva) |
-| Fondo secundario | `#16301F` (verde oscuro / paneles) |
-| Panel hover | `#1E3D2A` |
-| Acento verde (musgo) | `#7FB069` |
-| Acento verde lima (hoja) | `#A7C957` |
-| Acento marrón (tierra) | `#C08552` |
-| Texto principal | `#F4EFE6` (blanco cálido) |
-| Texto suave | `#A9B8A0` (verde salvia) |
-| Tipografía títulos | Serif (Playfair Display) |
-| Tipografía cuerpo | Sans-serif (Inter) |
-| Vibe | Natural, orgánico, aventurero, vivo |
-| Fotos galería | Blanco y negro por defecto, color al hover |
+| Elemento | Token | Valor |
+|----------|-------|-------|
+| Fondo principal | `--color-selva` | `#DBD3C7` (piedra / taupe cálido) |
+| Fondo secundario | `--color-selva-2` | `#E8E2D7` (piedra clara) |
+| Panel / hover | `--color-selva-3` | `#CCC2B3` (piedra profunda) |
+| Acento 1 (siena) | `--color-musgo` | `#A8482B` |
+| Acento 1 hover | `--color-hoja` | `#8C3A22` |
+| Acento 2 (nogal) | `--color-tierra` | `#5C4A38` |
+| Texto principal | `--color-crema` | `#241E18` (nogal casi negro) |
+| Texto suave | `--color-suave` | `#6B5F50` (taupe oscuro) |
+| Tipografía títulos | — | Serif (Playfair Display) |
+| Tipografía cuerpo | — | Sans-serif (Inter) |
+| Fotos galería | — | Blanco y negro por defecto, color al hover |
+
+> 🎨 **Bocetos de color:** hay una galería de variantes de paleta en `/bocetos` (ruta `src/pages/bocetos/`) para mostrarle opciones a Francisco. Cada boceto re-skinea la página completa sobreescribiendo las variables CSS. La paleta "Piedra y siena" es la actual del sitio.
 
 ---
 
@@ -180,6 +181,7 @@ public/
 | 2026-06-05 | Decisión: agregar sección Marcas/Sponsors. Pendiente de construir. |
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
+| 2026-06-09 | Iteración de paleta (varias versiones probadas: selvática verde, tierra marrón, atardecer ámbar, salvia, clara verde/oliva/bronce/greige, arcilla terracota). **Elegida: "Piedra y siena"** (fondo claro de piedra + siena + nogal). **El Desafío pasa a ser la sección principal:** el Hero ahora lidera con la carrera "Explora" (fecha, lugar, "Sumate") y la sección Desafío sube al 2º lugar. Creada galería de **bocetos de color** en `/bocetos` para mostrarle opciones a Francisco. |
 | 2026-06-09 | Francisco respondió la toma de requisitos (`Preguntas_y_Respuestas_Francisco_Explora.pdf`). **Página construida con su info real:** paleta selvática implementada (hex definidos), historia real (nacido 18-dic-2000), lema ("Gracias por un día más en el planeta Tierra" / "Movimiento trae más movimiento"), carrera **"Explora" en Potrerillos**, motivación y objetivo en su voz auténtica ("la excusa perfecta para empezar" / "terminarlo y pasarla bien"), redes (`franciscoexplora` en todas), menú móvil hamburguesa. Build OK. Pendientes: WhatsApp personal (marcas), URL de Strava, fotos y videos. |
 
 ---

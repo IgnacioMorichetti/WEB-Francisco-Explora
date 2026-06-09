@@ -2,15 +2,19 @@
 @import "tailwindcss";
 
 @theme {
-  /* Paleta natural / selvática — verde oscuro + marrón tierra */
-  --color-selva: #0F2117;        /* fondo principal (verde noche de selva) */
-  --color-selva-2: #16301F;      /* fondo secundario / paneles */
-  --color-selva-3: #1E3D2A;      /* paneles más claros / hover */
-  --color-musgo: #7FB069;        /* acento verde hoja (vivo) */
-  --color-hoja: #A7C957;         /* acento verde lima (detalles) */
-  --color-tierra: #C08552;       /* acento marrón tierra (cálido) */
-  --color-crema: #F4EFE6;        /* texto principal (blanco cálido) */
-  --color-suave: #A9B8A0;        /* texto secundario (verde salvia) */
+  /* Paleta "Piedra y siena" — fondo de piedra/taupe teñido, siena quemado + nogal.
+     Cálida, editorial y terrosa; el fondo tiene color propio (no blanco ni crema).
+     NOTA: por estabilidad del código los tokens conservan sus nombres, pero ahora
+     --color-selva = FONDO CLARO y --color-crema = TEXTO OSCURO.
+     --color-musgo = siena (acento 1) y --color-tierra = nogal (acento 2). */
+  --color-selva: #DBD3C7;        /* fondo principal (piedra / taupe cálido) */
+  --color-selva-2: #E8E2D7;      /* fondo secundario (piedra clara) */
+  --color-selva-3: #CCC2B3;      /* paneles / hover (piedra más profunda) */
+  --color-musgo: #A8482B;        /* acento principal (siena quemado) */
+  --color-hoja: #8C3A22;         /* siena más profundo (hover de botones) */
+  --color-tierra: #5C4A38;       /* acento secundario (nogal oscuro) */
+  --color-crema: #241E18;        /* texto principal (nogal casi negro) + texto sobre acento */
+  --color-suave: #6B5F50;        /* texto secundario (taupe oscuro) */
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;

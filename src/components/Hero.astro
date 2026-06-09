@@ -4,23 +4,31 @@ const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi
 
 <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Foto de fondo -->
-  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-50"></div>
-  <!-- Veladura selvática para legibilidad -->
-  <div class="absolute inset-0 bg-gradient-to-b from-selva/70 via-selva/60 to-selva z-10"></div>
+  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-60"></div>
+  <!-- Veladura clara para legibilidad -->
+  <div class="absolute inset-0 bg-gradient-to-b from-selva/80 via-selva/65 to-selva z-10"></div>
 
   <!-- Contenido -->
   <div class="relative z-20 text-center px-6 max-w-5xl mx-auto">
-    <p class="text-musgo text-xs uppercase tracking-[0.5em] mb-8 font-semibold">
-      Explorando la vida
+    <p class="text-musgo text-xs md:text-sm uppercase tracking-[0.4em] mb-6 font-semibold">
+      El desafío de Francisco
     </p>
-    <h1 class="font-serif text-7xl md:text-[10rem] font-black leading-none mb-8 uppercase tracking-tight">
-      Francisco<br />
-      <span class="text-musgo">Explora</span>
+    <h1 class="font-serif text-7xl md:text-[11rem] font-black leading-none mb-6 uppercase tracking-tight text-crema">
+      Explora
     </h1>
-    <p class="text-suave text-lg md:text-2xl max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-      Gracias por un día más en el planeta Tierra.<br class="hidden md:block" />
-      <span class="text-crema">Movimiento trae más movimiento.</span>
+
+    <!-- Fecha y lugar destacados -->
+    <p class="inline-block border-y border-tierra/40 py-3 px-2 text-tierra font-semibold tracking-[0.3em] uppercase text-sm md:text-base mb-8">
+      28 · 06 · 2026 — Potrerillos, Mendoza
     </p>
+
+    <p class="text-suave text-lg md:text-xl max-w-2xl mx-auto mb-3 leading-relaxed">
+      Un triatlón de larga distancia: <span class="text-crema">1.9 km de nado · 90 km de bici · 21.1 km de carrera.</span>
+    </p>
+    <p class="text-crema text-xl md:text-2xl font-serif italic max-w-2xl mx-auto mb-12">
+      Y la mejor parte: no lo corro solo.
+    </p>
+
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a
         href={WHATSAPP_GRUPO}
@@ -32,9 +40,9 @@ const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi
       </a>
       <a
         href="#sobre-mi"
-        class="inline-block border border-tierra text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-tierra/20 transition-all duration-300"
+        class="inline-block border border-tierra text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-tierra/15 transition-all duration-300"
       >
-        Mi historia
+        Conocé a Francisco
       </a>
     </div>
   </div>

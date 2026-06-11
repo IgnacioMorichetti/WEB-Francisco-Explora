@@ -116,7 +116,7 @@ public/
 | Strava | ✅ Confirmado | [strava.com/athletes/176997103](https://www.strava.com/athletes/176997103) (perfil "Francisco explora") |
 | Email de contacto | ⚠️ Provisional | `aventureate@gmail.com` (Francisco lo quiere cambiar) |
 | WhatsApp grupo "Explora" | ✅ Confirmado | Link del grupo (botón "Sumate al desafío") |
-| WhatsApp personal (marcas) | ❌ Pendiente | Número para el botón "Sos una marca" |
+| WhatsApp personal (marcas) | ✅ Confirmado | `+54 9 2613 657 527` → [wa.me/5492613657527](https://wa.me/5492613657527), sin mensaje predeterminado (pedido de Ignacio) |
 
 ---
 
@@ -148,7 +148,7 @@ public/
 
 - [x] Conseguir todas las redes sociales de Francisco (usuario `franciscoexplora` en todas)
 - [x] Conseguir el **URL real de Strava** → `strava.com/athletes/176997103`
-- [ ] Conseguir el **número de WhatsApp personal** de Francisco para el botón "Sos una marca"
+- [x] Conseguir el **número de WhatsApp personal** de Francisco para el botón "¿Sos una marca?" → `wa.me/5492613657527`
 - [ ] Confirmar email definitivo (el actual `aventureate@gmail.com` es provisional)
 - [ ] Cargar todas las fotos (`hero.jpg`, `sobre-mi.jpg`, `galeria-1` al `6`) — Francisco las pasa
 - [x] Agregar navegación móvil (menú hamburguesa)
@@ -183,6 +183,7 @@ public/
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
 | 2026-06-09 | Iteración de paleta (varias versiones probadas: selvática verde, tierra marrón, atardecer ámbar, salvia, clara verde/oliva/bronce/greige, arcilla terracota). **Elegida: "Piedra y siena"** (fondo claro de piedra + siena + nogal). **El Desafío pasa a ser la sección principal:** el Hero ahora lidera con la carrera "Explora" (fecha, lugar, "Sumate") y la sección Desafío sube al 2º lugar. Creada galería de **bocetos de color** en `/bocetos` para mostrarle opciones a Francisco. |
+| 2026-06-11 | **WhatsApp personal confirmado:** `+54 9 2613 657 527`. Los botones "¿Sos una marca?" (Hero y Desafío) ahora abren `wa.me/5492613657527` sin mensaje predeterminado (antes era un mailto interino). |
 | 2026-06-11 | **Facebook corregido:** Francisco pasó su link de share; el perfil real es `facebook.com/people/Francisco-Explora/61578235027790` (no existe el usuario `franciscoexplora` en Facebook). Actualizado en Contacto. |
 | 2026-06-11 | **Strava confirmado:** Francisco pasó su link (`strava.app.link`), resuelto al perfil real `strava.com/athletes/176997103`. Cargado en Contacto. |
 | 2026-06-11 | **Refinamientos:** fondo claro aún más luminoso (`#F8F4EB`); tipografía unificada a una sola familia (Inter, se quitó Playfair Display); título de Sobre mí más chico (`4xl/5xl`); cursor pointer en el toggle de tema y el menú hamburguesa; navbar con secciones + toggle agrupados a la derecha (colapso móvil intacto); al hacer hover sobre el toggle de tema, la luna se rellena con el color de acento (y el centro del sol en modo oscuro). |

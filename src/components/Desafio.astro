@@ -1,8 +1,7 @@
 ---
 const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi_t'
-// TODO: reemplazar por el WhatsApp personal de Francisco cuando lo pase.
-// Interino: su email, hasta tener el número (formato: https://wa.me/549XXXXXXXXXX).
-const CONTACTO_MARCAS = 'mailto:aventureate@gmail.com?subject=Sos%20una%20marca%20-%20Francisco%20Explora'
+// WhatsApp personal de Francisco (botón "¿Sos una marca?"), sin mensaje predeterminado.
+const CONTACTO_MARCAS = 'https://wa.me/5492613657527'
 ---
 
 <section id="desafio" class="py-28 px-6 bg-selva text-crema">
@@ -85,6 +84,8 @@ const CONTACTO_MARCAS = 'mailto:aventureate@gmail.com?subject=Sos%20una%20marca%
         </a>
         <a
           href={CONTACTO_MARCAS}
+          target="_blank"
+          rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 border border-tierra text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-tierra/20 transition-all duration-300"
         >
           ¿Sos una marca?

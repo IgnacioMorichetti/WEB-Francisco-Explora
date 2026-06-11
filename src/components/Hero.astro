@@ -1,5 +1,7 @@
 ---
 const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi_t'
+// TODO: reemplazar por el WhatsApp personal de Francisco cuando lo pase.
+const CONTACTO_MARCAS = 'mailto:aventureate@gmail.com?subject=Sos%20una%20marca%20-%20Francisco%20Explora'
 ---
 
 <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -13,7 +15,7 @@ const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi
     <p class="text-musgo text-xs md:text-sm uppercase tracking-[0.4em] mb-6 font-semibold">
       El desafío de Francisco
     </p>
-    <h1 class="font-serif text-7xl md:text-[11rem] font-black leading-none mb-6 uppercase tracking-tight text-crema">
+    <h1 class="font-serif text-6xl md:text-9xl font-black leading-none mb-6 uppercase tracking-tight text-crema">
       Explora
     </h1>
 
@@ -23,12 +25,15 @@ const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi
     </p>
 
     <p class="text-suave text-lg md:text-xl max-w-2xl mx-auto mb-3 leading-relaxed">
-      Un triatlón de larga distancia: <span class="text-crema">1.9 km de nado · 90 km de bici · 21.1 km de carrera.</span>
+      Un triatlón personal: <span class="text-crema">1,9 km nadando, 90 km pedaleando y 21,1 km corriendo.</span>
     </p>
     <p class="text-crema text-xl md:text-2xl font-serif italic max-w-2xl mx-auto mb-12">
       Y la mejor parte: no lo corro solo.
     </p>
 
+    <p class="text-crema text-base md:text-lg uppercase tracking-[0.3em] font-semibold mb-6">
+      ¿Querés participar?
+    </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a
         href={WHATSAPP_GRUPO}
@@ -39,10 +44,10 @@ const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi
         Sumate al desafío
       </a>
       <a
-        href="#sobre-mi"
+        href={CONTACTO_MARCAS}
         class="inline-block border border-tierra text-crema px-10 py-4 text-sm uppercase tracking-widest font-black hover:bg-tierra/15 transition-all duration-300"
       >
-        Conocé a Francisco
+        ¿Sos una marca?
       </a>
     </div>
   </div>

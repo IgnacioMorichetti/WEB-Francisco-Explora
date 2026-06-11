@@ -80,7 +80,7 @@ public/
 | Tipografía (única) | — | Inter en todo el sitio (títulos en black 900; el token `--font-serif` quedó apuntando a Inter por estabilidad) | — |
 | Fotos galería | — | Blanco y negro por defecto, color al hover | — |
 
-> 🎨 **Bocetos de color:** hay una galería de variantes de paleta en `/bocetos` (ruta `src/pages/bocetos/`) para mostrarle opciones a Francisco. Cada boceto re-skinea la página completa sobreescribiendo las variables CSS. "Petróleo y arena" es la actual del sitio y "Noche y siena" es el modo oscuro.
+> 🎨 **Bocetos de color:** en `/bocetos` (ruta `src/pages/bocetos/`) quedan solo las dos paletas definitivas: "Petróleo y arena" (la actual, modo claro) y "Noche y siena" (el modo oscuro). Cada una re-skinea la página completa sobreescribiendo las variables CSS. Los otros 10 bocetos exploratorios se eliminaron el 2026-06-11 una vez elegida la paleta.
 
 ---
 
@@ -183,6 +183,7 @@ public/
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
 | 2026-06-09 | Iteración de paleta (varias versiones probadas: selvática verde, tierra marrón, atardecer ámbar, salvia, clara verde/oliva/bronce/greige, arcilla terracota). **Elegida: "Piedra y siena"** (fondo claro de piedra + siena + nogal). **El Desafío pasa a ser la sección principal:** el Hero ahora lidera con la carrera "Explora" (fecha, lugar, "Sumate") y la sección Desafío sube al 2º lugar. Creada galería de **bocetos de color** en `/bocetos` para mostrarle opciones a Francisco. |
+| 2026-06-11 | **Purga del repo:** se eliminaron los 10 bocetos exploratorios de `paletas.js` (quedan solo "Petróleo y arena" y "Noche y siena"), los docs de sesión (`docs/sesion-01/02.md` — su contenido vive en este historial), el cuestionario ya respondido (`docs/preguntas-para-francisco.md` y su PDF) y el boilerplate `.vscode/`. Se conservan `Preguntas_y_Respuestas_Francisco_Explora.pdf` (respuestas originales de Francisco) y `docs/toma-de-requerimientos.md`. |
 | 2026-06-11 | **WhatsApp personal confirmado:** `+54 9 2613 657 527`. Los botones "¿Sos una marca?" (Hero y Desafío) ahora abren `wa.me/5492613657527` sin mensaje predeterminado (antes era un mailto interino). |
 | 2026-06-11 | **Facebook corregido:** Francisco pasó su link de share; el perfil real es `facebook.com/people/Francisco-Explora/61578235027790` (no existe el usuario `franciscoexplora` en Facebook). Actualizado en Contacto. |
 | 2026-06-11 | **Strava confirmado:** Francisco pasó su link (`strava.app.link`), resuelto al perfil real `strava.com/athletes/176997103`. Cargado en Contacto. |

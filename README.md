@@ -113,7 +113,7 @@ public/
 | TikTok | ✅ Confirmado | [@franciscoexplora](https://www.tiktok.com/@franciscoexplora) |
 | YouTube | ✅ Confirmado | [@franciscoexplora](https://www.youtube.com/@franciscoexplora) |
 | Facebook | ✅ Confirmado | [franciscoexplora](https://www.facebook.com/franciscoexplora) |
-| Strava | ⚠️ Usuario sí, URL pendiente | `franciscoexplora` — falta el URL real (Strava usa `/athletes/ID` numérico) |
+| Strava | ✅ Confirmado | [strava.com/athletes/176997103](https://www.strava.com/athletes/176997103) (perfil "Francisco explora") |
 | Email de contacto | ⚠️ Provisional | `aventureate@gmail.com` (Francisco lo quiere cambiar) |
 | WhatsApp grupo "Explora" | ✅ Confirmado | Link del grupo (botón "Sumate al desafío") |
 | WhatsApp personal (marcas) | ❌ Pendiente | Número para el botón "Sos una marca" |
@@ -147,7 +147,7 @@ public/
 ## Pendiente / TODO
 
 - [x] Conseguir todas las redes sociales de Francisco (usuario `franciscoexplora` en todas)
-- [ ] Conseguir el **URL real de Strava** (perfil con ID numérico)
+- [x] Conseguir el **URL real de Strava** → `strava.com/athletes/176997103`
 - [ ] Conseguir el **número de WhatsApp personal** de Francisco para el botón "Sos una marca"
 - [ ] Confirmar email definitivo (el actual `aventureate@gmail.com` es provisional)
 - [ ] Cargar todas las fotos (`hero.jpg`, `sobre-mi.jpg`, `galeria-1` al `6`) — Francisco las pasa
@@ -183,6 +183,7 @@ public/
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
 | 2026-06-09 | Iteración de paleta (varias versiones probadas: selvática verde, tierra marrón, atardecer ámbar, salvia, clara verde/oliva/bronce/greige, arcilla terracota). **Elegida: "Piedra y siena"** (fondo claro de piedra + siena + nogal). **El Desafío pasa a ser la sección principal:** el Hero ahora lidera con la carrera "Explora" (fecha, lugar, "Sumate") y la sección Desafío sube al 2º lugar. Creada galería de **bocetos de color** en `/bocetos` para mostrarle opciones a Francisco. |
+| 2026-06-11 | **Strava confirmado:** Francisco pasó su link (`strava.app.link`), resuelto al perfil real `strava.com/athletes/176997103`. Cargado en Contacto. |
 | 2026-06-11 | **Refinamientos:** fondo claro aún más luminoso (`#F8F4EB`); tipografía unificada a una sola familia (Inter, se quitó Playfair Display); título de Sobre mí más chico (`4xl/5xl`); cursor pointer en el toggle de tema y el menú hamburguesa; navbar con secciones + toggle agrupados a la derecha (colapso móvil intacto); al hacer hover sobre el toggle de tema, la luna se rellena con el color de acento (y el centro del sol en modo oscuro). |
 | 2026-06-11 | **Rediseño de paleta + modo oscuro:** la paleta principal pasa a "Petróleo y arena" ajustada (fondo arena más claro/brillante, todas las letras y líneas en azul petróleo). Se agrega **modo oscuro** con paleta "Noche y siena" y toggle luna/sol en el Navbar (persistido en localStorage). Bloques "¿Por qué este desafío?" y "Mi objetivo" centrados (antes tenían borde izquierdo tipo callout, eliminado). Se quitó la frase "Gracias por un día más en el planeta Tierra" de Sobre mí y el indicador de Scroll del Hero. Badge "Actual" en `/bocetos` movido a Petróleo y arena. |
 | 2026-06-11 | **Feedback de Francisco aplicado** (revisó la página sin imágenes): "Explora" del Hero más chico; subtítulo "Un triatlón personal: 1,9 km nadando, 90 km pedaleando y 21,1 km corriendo"; "¿Querés participar?" sobre los botones del Hero (botón 2 pasa de "Conocé a Francisco" a "¿Sos una marca?"); nueva intro del Desafío ("Me enfrento a mi primer objetivo del año... Y vos estás invitado"); tarjetas natación/carrera retocadas; "¿Por qué este desafío?" reescrito en su voz (decisión 100% impulsiva, "la excusa para arrancar a hacer contenido"); "Mi objetivo" reescrito (terminar el desafío y que todos la pasen bien); bloque final "Hacemos deporte juntos. ¡Entrá al grupo de WhatsApp y mantenete informado!"; Sobre mí reescrito completo con título "Persiguiendo mis sueños"; Galería retitulada "Recuerdos". Números con coma decimal (1,9 / 21,1). |

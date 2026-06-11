@@ -155,8 +155,8 @@ public/
 - [x] Revisar y personalizar todos los textos con info real de Francisco
 - [ ] Marcas/Sponsors: ninguna confirmada aún (Francisco "lo tiene que hablar con ellos"). Sección no construida; el botón "Sos una marca" cubre el contacto por ahora.
 - [ ] Videos: Francisco confirmó que tiene, los tiene que buscar
-- [ ] Desplegar en Vercel
-- [ ] Definir dominio (¿franciscoexplora.com o similar?)
+- [x] Desplegar en Vercel → **https://web-francisco-explora.vercel.app** (cuenta Vercel `ignaciomorichetti`, proyecto `web-francisco-explora`, deploy por CLI)
+- [ ] Definir dominio (¿franciscoexplora.com o similar?) — Francisco quiere comprar un `.com`; cuando lo tenga, se conecta al proyecto de Vercel desde el panel (Settings → Domains) apuntando los DNS del registrador. Sin cambios de código.
 - [ ] Segunda etapa: Bitácora / Blog
 
 ---
@@ -183,6 +183,7 @@ public/
 | 2026-06-08 | Vuelta a la estética "Explorador terroso" (crema/marrón/oliva, tipografía serif en títulos). |
 | 2026-06-08 | Toma de requerimientos detallada (`docs/toma-de-requerimientos.md`). Confirmado con Francisco: ya no es sorpresa; nueva estética **natural/selvática** (verde oscuro + marrón); **El Desafío pasa a ser prioridad #1** con fecha **28-jun-2026** y dos botones ("Sumate al desafío" → WhatsApp, "Sos una marca" → contacto). Una sola versión final con feedback continuo de Francisco. |
 | 2026-06-09 | Iteración de paleta (varias versiones probadas: selvática verde, tierra marrón, atardecer ámbar, salvia, clara verde/oliva/bronce/greige, arcilla terracota). **Elegida: "Piedra y siena"** (fondo claro de piedra + siena + nogal). **El Desafío pasa a ser la sección principal:** el Hero ahora lidera con la carrera "Explora" (fecha, lugar, "Sumate") y la sección Desafío sube al 2º lugar. Creada galería de **bocetos de color** en `/bocetos` para mostrarle opciones a Francisco. |
+| 2026-06-11 | **Deploy en Vercel:** el sitio está online en **https://web-francisco-explora.vercel.app** (proyecto `web-francisco-explora` en la cuenta `ignaciomorichetti`, deploy manual por CLI con `npx vercel --prod`). Pendiente: conectar el repo de GitHub en Vercel para deploys automáticos por commit, y el dominio `.com` cuando Francisco lo compre. |
 | 2026-06-11 | **Purga del repo:** se eliminaron los 10 bocetos exploratorios de `paletas.js` (quedan solo "Petróleo y arena" y "Noche y siena"), los docs de sesión (`docs/sesion-01/02.md` — su contenido vive en este historial), el cuestionario ya respondido (`docs/preguntas-para-francisco.md` y su PDF) y el boilerplate `.vscode/`. Se conservan `Preguntas_y_Respuestas_Francisco_Explora.pdf` (respuestas originales de Francisco) y `docs/toma-de-requerimientos.md`. |
 | 2026-06-11 | **WhatsApp personal confirmado:** `+54 9 2613 657 527`. Los botones "¿Sos una marca?" (Hero y Desafío) ahora abren `wa.me/5492613657527` sin mensaje predeterminado (antes era un mailto interino). |
 | 2026-06-11 | **Facebook corregido:** Francisco pasó su link de share; el perfil real es `facebook.com/people/Francisco-Explora/61578235027790` (no existe el usuario `franciscoexplora` en Facebook). Actualizado en Contacto. |

@@ -1,23 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
 @theme {
-  /* Paleta "Piedra y siena" — fondo de piedra/taupe teñido, siena quemado + nogal.
-     Cálida, editorial y terrosa; el fondo tiene color propio (no blanco ni crema).
+  /* Paleta "Petróleo y arena" (ajustada) — fondo arena claro y luminoso, con TODO
+     el acento (texto destacado, líneas y botones) en la familia azul petróleo.
      NOTA: por estabilidad del código los tokens conservan sus nombres, pero ahora
      --color-selva = FONDO CLARO y --color-crema = TEXTO OSCURO.
-     --color-musgo = siena (acento 1) y --color-tierra = nogal (acento 2). */
-  --color-selva: #DBD3C7;        /* fondo principal (piedra / taupe cálido) */
-  --color-selva-2: #E8E2D7;      /* fondo secundario (piedra clara) */
-  --color-selva-3: #CCC2B3;      /* paneles / hover (piedra más profunda) */
-  --color-musgo: #A8482B;        /* acento principal (siena quemado) */
-  --color-hoja: #8C3A22;         /* siena más profundo (hover de botones) */
-  --color-tierra: #5C4A38;       /* acento secundario (nogal oscuro) */
-  --color-crema: #241E18;        /* texto principal (nogal casi negro) + texto sobre acento */
-  --color-suave: #6B5F50;        /* texto secundario (taupe oscuro) */
+     --color-musgo = petróleo (acento 1) y --color-tierra = petróleo azulado (líneas). */
+  --color-selva: #F8F4EB;        /* fondo principal (arena muy clara y luminosa) */
+  --color-selva-2: #FDFBF6;      /* fondo secundario (casi blanco cálido) */
+  --color-selva-3: #EBE5D6;      /* paneles / hover (arena suave) */
+  --color-musgo: #2F6E66;        /* acento principal (azul petróleo) */
+  --color-hoja: #224F49;         /* petróleo profundo (hover de botones) */
+  --color-tierra: #41707A;       /* acento secundario / líneas (petróleo azulado) */
+  --color-crema: #1E2B2A;        /* texto principal (petróleo casi negro) */
+  --color-suave: #54696B;        /* texto secundario (petróleo grisáceo) */
 
-  --font-serif: 'Playfair Display', Georgia, serif;
+  /* Tipografía unificada: una sola familia (Inter) en todo el sitio.
+     El token --font-serif se conserva por estabilidad del código,
+     pero ahora también apunta a Inter. */
+  --font-serif: 'Inter', system-ui, sans-serif;
   --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+/* Modo oscuro — paleta "Noche y siena" (el último boceto).
+   Se activa con la clase .dark en <html>; el toggle vive en el Navbar
+   y la elección se guarda en localStorage. */
+html.dark {
+  --color-selva: #211D18;
+  --color-selva-2: #2A251F;
+  --color-selva-3: #38312A;
+  --color-musgo: #C25A37;
+  --color-hoja: #A8492B;
+  --color-tierra: #C99A66;
+  --color-crema: #F0E9DE;
+  --color-suave: #A99C8B;
 }
 
 html {

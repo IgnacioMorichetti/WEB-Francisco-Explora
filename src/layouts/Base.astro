@@ -20,6 +20,13 @@ const {
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
+    <!-- Aplica el modo oscuro antes del primer render para evitar el parpadeo.
+         En /bocetos no aplica: cada boceto fuerza su propia paleta. -->
+    <script is:inline>
+      if (localStorage.getItem('tema') === 'oscuro' && !location.pathname.startsWith('/bocetos')) {
+        document.documentElement.classList.add('dark')
+      }
+    </script>
   </head>
   <body>
     <slot />

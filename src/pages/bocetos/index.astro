@@ -1,4 +1,4 @@
----
+﻿---
 import Base from '../../layouts/Base.astro'
 import { paletas } from '../../data/paletas.js'
 ---
@@ -9,7 +9,7 @@ import { paletas } from '../../data/paletas.js'
 
       <header class="text-center mb-14">
         <p class="text-xs uppercase tracking-[0.4em] mb-4" style="color:#b9a489;">Para mostrarle a Francisco</p>
-        <h1 class="text-4xl md:text-6xl font-black mb-5" style="font-family:'Playfair Display',serif;">
+        <h1 class="text-4xl md:text-6xl font-black mb-5" style="font-family:'Inter',system-ui,sans-serif;">
           Bocetos de color
         </h1>
         <p class="max-w-2xl mx-auto text-base md:text-lg" style="color:#bdb6aa;">
@@ -32,13 +32,13 @@ import { paletas } from '../../data/paletas.js'
                 <span class="w-8 h-8 rounded-full shadow" style={`background:${p.vars.musgo};`}></span>
                 <span class="w-8 h-8 rounded-full shadow" style={`background:${p.vars.tierra};`}></span>
                 <span class="w-8 h-8 rounded-full shadow border" style={`background:${p.vars.selva2};border-color:${p.vars.selva3};`}></span>
-                <span class="ml-auto text-2xl font-black" style={`color:${p.vars.crema};font-family:'Playfair Display',serif;`}>Aa</span>
+                <span class="ml-auto text-2xl font-black" style={`color:${p.vars.crema};font-family:'Inter',system-ui,sans-serif;`}>Aa</span>
               </div>
             </div>
 
             <div class="p-5">
               <div class="flex items-center gap-2 mb-1">
-                <h2 class="text-lg font-bold" style="font-family:'Playfair Display',serif;color:#f0ede6;">{p.nombre}</h2>
+                <h2 class="text-lg font-bold" style="font-family:'Inter',system-ui,sans-serif;color:#f0ede6;">{p.nombre}</h2>
                 {p.actual && (
                   <span class="text-[10px] uppercase tracking-widest px-2 py-0.5 rounded-full" style="background:#d98b5f;color:#1c1c1a;font-weight:700;">Actual</span>
                 )}

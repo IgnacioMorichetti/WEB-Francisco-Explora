@@ -7,24 +7,42 @@
       Francisco <span class="text-musgo">Explora</span>
     </a>
 
-    <!-- Menú desktop -->
-    <ul class="hidden md:flex gap-8 text-sm font-semibold text-suave uppercase tracking-widest">
-      <li><a href="#desafio" class="hover:text-musgo transition-colors">El desafío</a></li>
-      <li><a href="#sobre-mi" class="hover:text-musgo transition-colors">Sobre mí</a></li>
-      <li><a href="#galeria" class="hover:text-musgo transition-colors">Galería</a></li>
-      <li><a href="#contacto" class="hover:text-musgo transition-colors">Contacto</a></li>
-    </ul>
+    <!-- Todo el menú agrupado a la derecha -->
+    <div class="flex items-center gap-6">
+      <!-- Menú desktop -->
+      <ul class="hidden md:flex gap-8 text-sm font-semibold text-suave uppercase tracking-widest">
+        <li><a href="#desafio" class="hover:text-musgo transition-colors">El desafío</a></li>
+        <li><a href="#sobre-mi" class="hover:text-musgo transition-colors">Sobre mí</a></li>
+        <li><a href="#galeria" class="hover:text-musgo transition-colors">Galería</a></li>
+        <li><a href="#contacto" class="hover:text-musgo transition-colors">Contacto</a></li>
+      </ul>
 
-    <!-- Botón hamburguesa móvil -->
-    <button
-      id="menu-toggle"
-      aria-label="Abrir menú"
-      class="md:hidden flex flex-col gap-1.5 p-2"
-    >
-      <span class="block w-6 h-0.5 bg-crema transition-all"></span>
-      <span class="block w-6 h-0.5 bg-crema transition-all"></span>
-      <span class="block w-6 h-0.5 bg-crema transition-all"></span>
-    </button>
+      <!-- Toggle modo oscuro -->
+      <button
+        id="tema-toggle"
+        aria-label="Cambiar entre modo claro y oscuro"
+        class="group p-2 text-suave hover:text-musgo transition-colors cursor-pointer"
+      >
+        <svg id="icono-luna" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-none group-hover:fill-current transition-colors" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+        <svg id="icono-sol" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 hidden fill-none stroke-current" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" class="group-hover:fill-current transition-colors"/>
+          <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+      </button>
+
+      <!-- Botón hamburguesa móvil -->
+      <button
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        class="md:hidden flex flex-col gap-1.5 p-2 cursor-pointer"
+      >
+        <span class="block w-6 h-0.5 bg-crema transition-all"></span>
+        <span class="block w-6 h-0.5 bg-crema transition-all"></span>
+        <span class="block w-6 h-0.5 bg-crema transition-all"></span>
+      </button>
+    </div>
   </div>
 
   <!-- Menú móvil desplegable -->
@@ -55,4 +73,23 @@
       menu.classList.remove('flex')
     })
   })
+
+  // Modo oscuro: alterna la clase .dark en <html> y persiste la elección.
+  const temaToggle = document.getElementById('tema-toggle')
+  const iconoLuna = document.getElementById('icono-luna')
+  const iconoSol = document.getElementById('icono-sol')
+
+  function actualizarIcono() {
+    const oscuro = document.documentElement.classList.contains('dark')
+    iconoLuna?.classList.toggle('hidden', oscuro)
+    iconoSol?.classList.toggle('hidden', !oscuro)
+  }
+
+  temaToggle?.addEventListener('click', () => {
+    const oscuro = document.documentElement.classList.toggle('dark')
+    localStorage.setItem('tema', oscuro ? 'oscuro' : 'claro')
+    actualizarIcono()
+  })
+
+  actualizarIcono()
 </script>

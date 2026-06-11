@@ -7,8 +7,7 @@ export const paletas = [
   {
     slug: 'piedra-y-siena',
     nombre: 'Piedra y siena',
-    descripcion: 'La actual del sitio. Fondo de piedra, siena quemado y nogal. Cálida y editorial.',
-    actual: true,
+    descripcion: 'Fondo de piedra, siena quemado y nogal. Cálida y editorial.',
     vars: { selva: '#DBD3C7', selva2: '#E8E2D7', selva3: '#CCC2B3', musgo: '#A8482B', hoja: '#8C3A22', tierra: '#5C4A38', crema: '#241E18', suave: '#6B5F50' },
   },
   {
@@ -62,8 +61,9 @@ export const paletas = [
   {
     slug: 'petroleo-y-arena',
     nombre: 'Petróleo y arena',
-    descripcion: 'Acento verde petróleo (frío) con terracota de apoyo. La más distinta y moderna.',
-    vars: { selva: '#ECE6DA', selva2: '#F6F2E9', selva3: '#DBD0BE', musgo: '#2F6E66', hoja: '#224F49', tierra: '#B5663B', crema: '#232019', suave: '#6F6557' },
+    descripcion: 'La actual del sitio (ajustada): fondo arena más claro y brillante, y todo el acento — letras y líneas — en azul petróleo.',
+    actual: true,
+    vars: { selva: '#F8F4EB', selva2: '#FDFBF6', selva3: '#EBE5D6', musgo: '#2F6E66', hoja: '#224F49', tierra: '#41707A', crema: '#1E2B2A', suave: '#54696B' },
   },
   {
     slug: 'bruma-clara',
@@ -74,7 +74,7 @@ export const paletas = [
   {
     slug: 'noche-y-siena',
     nombre: 'Noche y siena',
-    descripcion: 'La versión oscura, por si a Francisco le gusta lo nocturno. Fondo carbón cálido + siena.',
+    descripcion: 'El modo oscuro del sitio (toggle en el navbar). Fondo carbón cálido + siena.',
     vars: { selva: '#211D18', selva2: '#2A251F', selva3: '#38312A', musgo: '#C25A37', hoja: '#A8492B', tierra: '#C99A66', crema: '#F0E9DE', suave: '#A99C8B' },
   },
 ]

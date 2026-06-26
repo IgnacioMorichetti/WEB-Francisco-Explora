@@ -159,7 +159,7 @@ public/
 - [ ] Marcas/Sponsors: ninguna confirmada aún (Francisco "lo tiene que hablar con ellos"). Sección no construida; el botón "Sos una marca" cubre el contacto por ahora.
 - [ ] Videos: Francisco confirmó que tiene, los tiene que buscar
 - [x] Desplegar en Vercel → **https://web-francisco-explora.vercel.app** (cuenta Vercel `ignaciomorichetti`, proyecto `web-francisco-explora`, deploy por CLI)
-- [ ] Definir dominio (¿franciscoexplora.com o similar?) — Francisco quiere comprar un `.com`; cuando lo tenga, se conecta al proyecto de Vercel desde el panel (Settings → Domains) apuntando los DNS del registrador. Sin cambios de código.
+- [~] Dominio definitivo: **`franciscoexplora.com`** (confirmado el 2026-06-26). **Pendiente de conectar:** se hace desde el panel de Vercel (Settings → Domains) agregando `franciscoexplora.com` y apuntando los DNS en el registrador donde se compró. Sin cambios de código. Queda para otro día.
 - [ ] Segunda etapa: Bitácora / Blog
 
 ---

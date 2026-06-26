@@ -6,31 +6,36 @@ const CONTACTO_MARCAS = 'https://wa.me/5492613657527'
 
 <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
   <!-- Foto de fondo -->
-  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center opacity-60"></div>
-  <!-- Veladura clara para legibilidad -->
-  <div class="absolute inset-0 bg-gradient-to-b from-selva/80 via-selva/65 to-selva z-10"></div>
+  <div class="absolute inset-0 bg-[url('/images/hero.jpg')] bg-cover bg-center blur-[3px] scale-105"></div>
+  <!-- Veladura clara para legibilidad (más suave para que la foto se vea más) -->
+  <div class="absolute inset-0 bg-gradient-to-b from-selva/55 via-selva/30 to-selva z-10"></div>
 
   <!-- Contenido -->
   <div class="relative z-20 text-center px-6 max-w-5xl mx-auto">
+    <!-- ANTETÍTULO -->
     <p class="text-musgo text-xs md:text-sm uppercase tracking-[0.4em] mb-6 font-semibold">
       El desafío de Francisco
     </p>
+    <!-- TÍTULO -->
     <h1 class="font-serif text-6xl md:text-9xl font-black leading-none mb-6 uppercase tracking-tight text-crema">
       Explora
     </h1>
 
-    <!-- Fecha y lugar destacados -->
-    <p class="inline-block border-y border-tierra/40 py-3 px-2 text-tierra font-semibold tracking-[0.3em] uppercase text-sm md:text-base mb-8">
+    <!-- FECHA -->
+    <p class="inline-block border-y border-crema/40 dark:border-musgo/50 py-3 px-2 text-crema dark:text-musgo font-semibold tracking-[0.3em] uppercase text-sm md:text-base mb-8 [text-shadow:_0_2px_12px_rgb(0_0_0_/_0.7)]">
       28 · 06 · 2026 — Potrerillos, Mendoza
     </p>
 
-    <p class="text-suave text-lg md:text-xl max-w-2xl mx-auto mb-3 leading-relaxed">
-      Un triatlón personal: <span class="text-crema">1,9 km nadando, 90 km pedaleando y 21,1 km corriendo.</span>
+    <!-- SUBTÍTULO -->
+    <p class="text-white/80 text-lg md:text-xl max-w-2xl mx-auto mb-3 leading-relaxed [text-shadow:_0_2px_12px_rgb(0_0_0_/_0.65)]">
+      Un triatlón personal: <span class="text-white font-semibold">1,9 km nadando, 90 km pedaleando y 21,1 km corriendo.</span>
     </p>
-    <p class="text-crema text-xl md:text-2xl font-serif italic max-w-2xl mx-auto mb-12">
+    <!-- LEMA -->
+    <p class="text-white dark:text-musgo text-xl md:text-2xl font-serif italic max-w-2xl mx-auto mb-12 [text-shadow:_0_2px_12px_rgb(0_0_0_/_0.65)]">
       Y la mejor parte: no lo corro solo.
     </p>
 
+    <!-- LLAMADO -->
     <p class="text-crema text-base md:text-lg uppercase tracking-[0.3em] font-semibold mb-6">
       ¿Querés participar?
     </p>

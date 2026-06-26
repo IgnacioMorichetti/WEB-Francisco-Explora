@@ -1,13 +1,12 @@
 ---
 // Fotos propias de Francisco — aventuras, paisajes y energía feliz.
-// (Pendiente de que Francisco pase las imágenes finales.)
+// (Provisorias: Francisco todavía tiene que pasar el set final. Hay lugar para una 6ta.)
 const fotos = [
-  { src: '/images/galeria-1.jpg', alt: 'Francisco en una aventura' },
-  { src: '/images/galeria-2.jpg', alt: 'Paisaje explorado' },
-  { src: '/images/galeria-3.jpg', alt: 'Entrenamiento' },
-  { src: '/images/galeria-4.jpg', alt: 'Aventura al aire libre' },
-  { src: '/images/galeria-5.jpg', alt: 'Paisaje de montaña' },
-  { src: '/images/galeria-6.jpg', alt: 'En movimiento' },
+  { src: '/images/galeria-1.jpg', alt: 'Francisco con los brazos en alto bajo un atardecer en la montaña' },
+  { src: '/images/galeria-2.jpg', alt: 'Francisco a contraluz en la salida de un túnel' },
+  { src: '/images/galeria-3.jpg', alt: 'Francisco en la nieve durante una travesía de montaña' },
+  { src: '/images/galeria-4.jpg', alt: 'Francisco navegando en bote por un río de selva' },
+  { src: '/images/galeria-5.jpg', alt: 'Francisco en una playa entre la vegetación' },
 ]
 ---
 
@@ -20,16 +19,30 @@ const fotos = [
       <div class="w-12 h-1 bg-tierra mx-auto mt-6"></div>
     </div>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
-      {fotos.map((foto, i) => (
-        <div class={`overflow-hidden bg-selva-3 ${i === 0 ? 'col-span-2 row-span-2' : ''}`}>
-          <img
-            src={foto.src}
-            alt={foto.alt}
-            class="w-full h-full object-cover aspect-square grayscale hover:grayscale-0 hover:scale-105 transition-all duration-500"
-          />
-        </div>
-      ))}
+    <div class="grid md:grid-cols-2 gap-1">
+
+      <!-- Foto destacada (más grande) -->
+      <div class="overflow-hidden bg-selva-3 aspect-[4/5] md:aspect-auto">
+        <img
+          src={fotos[0].src}
+          alt={fotos[0].alt}
+          class="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+        />
+      </div>
+
+      <!-- Resto de las fotos -->
+      <div class="grid grid-cols-2 gap-1">
+        {fotos.slice(1).map((foto) => (
+          <div class="overflow-hidden bg-selva-3">
+            <img
+              src={foto.src}
+              alt={foto.alt}
+              class="w-full h-full object-cover aspect-square hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        ))}
+      </div>
+
     </div>
 
   </div>

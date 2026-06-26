@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 @import "tailwindcss";
 
+/* Hace que las utilidades `dark:` sigan la clase .dark de <html> (no el media query),
+   para poder ajustar colores puntuales solo en modo claro u oscuro. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Paleta "Petróleo y arena" (ajustada) — fondo arena claro y luminoso, con TODO
      el acento (texto destacado, líneas y botones) en la familia azul petróleo.

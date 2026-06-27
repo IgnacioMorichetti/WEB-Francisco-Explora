@@ -159,7 +159,7 @@ public/
 - [ ] Marcas/Sponsors: ninguna confirmada aún (Francisco "lo tiene que hablar con ellos"). Sección no construida; el botón "Sos una marca" cubre el contacto por ahora.
 - [ ] Videos: Francisco confirmó que tiene, los tiene que buscar
 - [x] Desplegar en Vercel → **https://web-francisco-explora.vercel.app** (cuenta Vercel `ignaciomorichetti`, proyecto `web-francisco-explora`, deploy por CLI)
-- [~] Dominio definitivo: **`franciscoexplora.com`** (confirmado el 2026-06-26). **Pendiente de conectar:** se hace desde el panel de Vercel (Settings → Domains) agregando `franciscoexplora.com` y apuntando los DNS en el registrador donde se compró. Sin cambios de código. Queda para otro día.
+- [x] Dominio definitivo: **`franciscoexplora.com`** — **CONECTADO Y LIVE el 2026-06-26** (registrado en **Squarespace**). `franciscoexplora.com` (apex, principal) y `www` agregados/verificados en Vercel; `www` **redirige al apex** (308). DNS cargados en Squarespace (Método A): `A @ 216.198.79.1`, `A @ 64.29.17.1`, `CNAME www cname.vercel-dns.com`. SSL del apex emitido OK; el de `www` se emite automático poco después. El sitio sirve en https://franciscoexplora.com (los visitantes ya no ven `vercel.app`). Sin cambios de código. El deploy sigue siendo manual por CLI (`npx vercel --prod`).
 - [ ] Segunda etapa: Bitácora / Blog
 
 ---

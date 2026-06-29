@@ -19,7 +19,7 @@ Quiere convertirse en **influencer** en Instagram y otras redes sociales, siendo
 Crear un sitio web personal para Francisco que:
 - Refleje su personalidad: explorador, humilde, auténtico, divertido
 - Acompañe su crecimiento como influencer
-- Documente su desafío principal: **correr un Medio Ironman (70.3) de forma independiente el 28 de junio de 2026**, con una propuesta abierta para que otros se sumen a correrlo con él
+- Documente su desafío principal: **correr su propio triatlón ("Explora") de forma independiente el sábado 4 de julio de 2026**, con una propuesta abierta para que otros se sumen a correrlo con él
 - Sirva como hub central de su presencia digital (Instagram y otras redes)
 
 ---
@@ -92,7 +92,7 @@ public/
 |---------|-------------|-------------|
 | Hero | ★★★★★ | Presentación impactante de Francisco, foto protagonista, tipografía enorme |
 | Sobre mí | ★★★★★ | Quién es Francisco, sus valores, su filosofía de vida |
-| El Desafío ("Explora") | ★★★★★ | **Sección prioritaria.** La carrera se llama **"Explora"**, es el **28 de junio de 2026 en Potrerillos (Mendoza)** — 1.9km nado · 90km ciclismo · 21.1km carrera. Motivación real de Francisco: "fue la excusa perfecta para empezar, el origen". Objetivo: "terminarlo y pasarla bien". Incluye botón **"Sumate al desafío"** (→ grupo de WhatsApp, link confirmado) y **"Sos una marca"** (→ su WhatsApp, número pendiente; interino: email) |
+| El Desafío ("Explora") | ★★★★★ | **Sección prioritaria.** La carrera se llama **"Explora"**, es el **sábado 4 de julio de 2026 en Potrerillos (Mendoza)** — 1,75 km nado · 60 km ciclismo · 15 km carrera. Motivación real de Francisco: "fue la excusa perfecta para empezar, el origen". Objetivo: "terminarlo y pasarla bien". Incluye botón **"Sumate al desafío"** (→ grupo de WhatsApp, link confirmado) y **"Sos una marca"** (→ su WhatsApp, número pendiente; interino: email) |
 | Galería | ★★★★☆ | Fotos de sus aventuras y entrenamientos |
 | Marcas | ★★★★☆ | Las marcas que se van sumando a su comunidad / sponsors |
 | Contacto | ★★★★★ | TODAS sus redes sociales + info para colaboraciones |
@@ -178,6 +178,7 @@ public/
 
 | Fecha | Descripción |
 |-------|-------------|
+| 2026-06-29 | **Cambios pedidos por Francisco (fecha, distancias y textos).** Nueva fecha de la carrera: **sábado 4 de julio de 2026** (Hero, intro del Desafío y meta description). Nuevas distancias: **1,75 km nado · 60 km bici · 15 km carrera** (antes 1,9/90/21,1). En el Hero se **eliminaron el subtítulo con las distancias y el lema** "Y la mejor parte: no lo corro solo". En el Desafío: intro pasa de "correr un triatlón de larga distancia" a **"correr mi propio triatlón"** (mismo final); descripción de la tarjeta Carrera ya no dice "media maratón" (15 km) → "Los últimos kilómetros para terminar con el desafío"; en "¿Por qué este desafío?" se quitó "No lo tenía planeado."; "Mi objetivo" → "terminar el desafío e intentar que todos la pasemos bien"; cierre "Hacemos deporte juntos" → **"Hagamos deporte juntos"**. |
 | 2026-06-05 | Inicio del proyecto. Creación del repositorio Git y GitHub. README y documentación base. |
 | 2026-06-05 | Definición de stack (Astro + Tailwind), identidad visual, estructura (1 sola página) y secciones. |
 | 2026-06-05 | Inicialización del proyecto Astro. Instalación de Tailwind. Todos los componentes creados. |

@@ -178,6 +178,7 @@ public/
 
 | Fecha | Descripción |
 |-------|-------------|
+| 2026-06-29 | **Fotos nuevas de Francisco (siguen siendo un set en evolución).** Se reemplazaron 3 imágenes con fotos reales que pasó: `sobre-mi.jpg` → foto en un mirador sobre el mar ("playa"); `galeria-2.jpg` (antes la del túnel) → Francisco tocando la guitarra entre palmeras; `galeria-5.jpg` (antes la de playa) → Francisco frente a un dique al atardecer. Actualizados los `alt` correspondientes en `Galeria.astro`. |
 | 2026-06-29 | **Cambios pedidos por Francisco (fecha, distancias y textos).** Nueva fecha de la carrera: **sábado 4 de julio de 2026** (Hero, intro del Desafío y meta description). Nuevas distancias: **1,75 km nado · 60 km bici · 15 km carrera** (antes 1,9/90/21,1). En el Hero se **eliminaron el subtítulo con las distancias y el lema** "Y la mejor parte: no lo corro solo". En el Desafío: intro pasa de "correr un triatlón de larga distancia" a **"correr mi propio triatlón"** (mismo final); descripción de la tarjeta Carrera ya no dice "media maratón" (15 km) → "Los últimos kilómetros para terminar con el desafío"; en "¿Por qué este desafío?" se quitó "No lo tenía planeado."; "Mi objetivo" → "terminar el desafío e intentar que todos la pasemos bien"; cierre "Hacemos deporte juntos" → **"Hagamos deporte juntos"**. |
 | 2026-06-05 | Inicio del proyecto. Creación del repositorio Git y GitHub. README y documentación base. |
 | 2026-06-05 | Definición de stack (Astro + Tailwind), identidad visual, estructura (1 sola página) y secciones. |

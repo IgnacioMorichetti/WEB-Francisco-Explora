@@ -2,6 +2,25 @@
 const WHATSAPP_GRUPO = 'https://chat.whatsapp.com/HSKTdjSCi443FdlIMSItGa?mode=gi_t'
 // WhatsApp personal de Francisco (botón "¿Sos una marca?"), sin mensaje predeterminado.
 const CONTACTO_MARCAS = 'https://wa.me/5492613657527'
+
+// Mapas de los tramos del recorrido (provisorios, vamos a acomodar tamaño/orden).
+const tramos = [
+  { src: '/images/recorridos/tramo-1.jpg', alt: '1° tramo del recorrido en Potrerillos', desc: 'Desde el punto de encuentro "Mirador 2 - Dique Potrerillos" hasta la puerta del túnel. (No hay que entrar al túnel nunca).', total: '2,1 km' },
+  { src: '/images/recorridos/tramo-2.jpg', alt: '2° tramo del recorrido en Potrerillos', desc: 'Desde la puerta del túnel hasta el punto justo antes de que comience la ruta 7 y después volver hasta la puerta del túnel. Comenzamos y terminamos en el mismo lugar. Este tramo es de 18,35 km, y se realizará 2 veces.', total: '36,7 km' },
+  { src: '/images/recorridos/tramo-2-sector.jpg', alt: '2° tramo del recorrido (sector Potrerillos)', desc: 'Zoom sector Potrerillos. Acá se ve claramente hasta dónde es el tramo 2.' },
+  { src: '/images/recorridos/tramo-3.jpg', alt: '3° tramo del recorrido en Potrerillos', desc: 'Desde la puerta del túnel hasta la rotonda del club de windsurf.', total: '3,4 km' },
+  { src: '/images/recorridos/tramo-4.jpg', alt: '4° tramo del recorrido en Potrerillos', desc: 'Desde la rotonda del club de windsurf hasta la rotonda pasando el Bar "Mother focca" (punto de encuentro del evento) y después volver hasta la rotonda del club de windsurf. Comenzamos y terminamos en el mismo lugar. Este tramo es de 6,8 km, y se realizará 6 veces.', total: '40,8 km' },
+  { src: '/images/recorridos/tramo-5.jpg', alt: '5° tramo del recorrido en Potrerillos', desc: 'Desde la rotonda del club de windsurf hasta la misma rotonda que en el tramo 4, y de ahí volver hasta el Bar "Mother focca" hasta completar los 90 km de ciclismo totales.', total: '7 km' },
+]
+
+// Mapas de la carrera a pie.
+const carreras = [
+  { src: '/images/recorridos/carrera-1.jpg', alt: '1° tramo de la carrera a pie', desc: 'Desde el bar hasta la rotonda de la YPF. Ida y vuelta.', total: '5,6 km' },
+  { src: '/images/recorridos/carrera-2.jpg', alt: '2° tramo de la carrera a pie', desc: 'Desde el bar hasta el punto máximo de lejanía en el sector reconocido como "el container de Potrerillos". Ida y vuelta.', total: '4,1 km' },
+  { src: '/images/recorridos/carrera-3.jpg', alt: '3° tramo de la carrera a pie', desc: 'Desde el bar hasta la rotonda más cercana yendo camino al hotel Potrerillos. Ida y vuelta.', total: '2,2 km' },
+  { src: '/images/recorridos/carrera-4.jpg', alt: '4° tramo de la carrera a pie', desc: 'Desde el bar hasta el "Mirador 3 - Dique de Potrerillos". Ida y vuelta.', total: '6,2 km' },
+  { src: '/images/recorridos/carrera-5.jpg', alt: '5° tramo de la carrera a pie', desc: 'EL FINAL, donde la idea es que TODAS las personas que estén presentes podamos hacer estos kilómetros juntos y de esa manera dar por finalizado el desafío. Ida y vuelta.', total: '2,9 km' },
+]
 ---
 
 <section id="desafio" class="py-28 px-6 bg-selva text-crema">
@@ -9,56 +28,132 @@ const CONTACTO_MARCAS = 'https://wa.me/5492613657527'
 
     <!-- Header -->
     <div class="text-center mb-16">
-      <p class="text-musgo text-xs uppercase tracking-[0.5em] mb-4 font-semibold">La carrera</p>
+      <p class="text-musgo text-xs uppercase tracking-[0.5em] mb-4 font-semibold">El desafío</p>
       <h2 class="font-serif text-5xl md:text-6xl font-black uppercase leading-tight mb-6">
-        El desafío
+        Explora
       </h2>
       <div class="w-12 h-1 bg-tierra mx-auto mb-8"></div>
       <p class="text-suave max-w-xl mx-auto leading-relaxed text-lg">
-        El <span class="text-crema">sábado 4 de julio</span>, en Potrerillos (Mendoza), me enfrento a mi
-        primer objetivo del año: <span class="text-crema">correr mi propio triatlón</span>.
-        Y vos estás invitado a venir y hacer deporte conmigo.
+        <span class="text-crema">Sábado 4 de julio</span>, en Potrerillos (Mendoza). Una carrera de
+        3 disciplinas. Natación, ciclismo y carrera a pie. Un triatlón donde solo competís contra
+        vos mismo. Sin premiación y sin cronómetro… <span class="text-crema">solo por el honor</span>.
       </p>
     </div>
 
     <!-- Las tres disciplinas -->
     <div class="grid md:grid-cols-3 gap-px bg-musgo/15 mb-16">
       <div class="bg-selva-2 p-10 hover:bg-selva-3 transition-colors">
-        <p class="text-musgo text-5xl font-black mb-2">1,75<span class="text-2xl ml-1">km</span></p>
+        <p class="text-musgo text-5xl font-black mb-2">1,9<span class="text-2xl ml-1">km</span></p>
         <p class="text-xs uppercase tracking-widest text-suave mb-4 font-semibold">Natación</p>
-        <p class="text-suave text-sm leading-relaxed">El arranque. Agua fría y mente en calma.</p>
+        <p class="text-suave text-sm leading-relaxed">El comienzo de una larga jornada, arrancando a las 9 de la mañana con el agua a 10° centígrados.</p>
       </div>
       <div class="bg-selva-2 p-10 hover:bg-selva-3 transition-colors">
-        <p class="text-musgo text-5xl font-black mb-2">60<span class="text-2xl ml-1">km</span></p>
+        <p class="text-musgo text-5xl font-black mb-2">90<span class="text-2xl ml-1">km</span></p>
         <p class="text-xs uppercase tracking-widest text-suave mb-4 font-semibold">Ciclismo</p>
-        <p class="text-suave text-sm leading-relaxed">El camino largo. Pedalear y disfrutar el paisaje de Potrerillos.</p>
+        <p class="text-suave text-sm leading-relaxed">El camino eterno, donde pasaremos unas buenas horas pedaleando y disfrutando el paisaje.</p>
       </div>
       <div class="bg-selva-2 p-10 hover:bg-selva-3 transition-colors">
-        <p class="text-musgo text-5xl font-black mb-2">15<span class="text-2xl ml-1">km</span></p>
-        <p class="text-xs uppercase tracking-widest text-suave mb-4 font-semibold">Carrera</p>
-        <p class="text-suave text-sm leading-relaxed">El cierre. Los últimos kilómetros para terminar con el desafío.</p>
+        <p class="text-musgo text-5xl font-black mb-2">21<span class="text-2xl ml-1">km</span></p>
+        <p class="text-xs uppercase tracking-widest text-suave mb-4 font-semibold">Carrera a pie</p>
+        <p class="text-suave text-sm leading-relaxed">El cierre, donde con el último esfuerzo terminaríamos el desafío.</p>
       </div>
     </div>
 
-    <!-- Por qué / objetivo (en su voz real) -->
-    <div class="grid md:grid-cols-2 gap-10 mb-16 text-center">
-      <div>
-        <p class="text-xs uppercase tracking-widest text-musgo mb-3 font-semibold">¿Por qué este desafío?</p>
-        <div class="w-12 h-px bg-tierra/50 mb-5 mx-auto"></div>
-        <p class="text-suave leading-relaxed">
-          Fue una decisión 100% impulsiva. No era algo que me volvía loco,
-          la verdad ni siquiera me llamaba tanto la atención. Pero simplemente fue algo que se
-          alineaba con mi primer semestre del año y podía ser "llevable" con mis planificaciones.
-          Lo importante es que fue <span class="text-crema">"la excusa para arrancar a hacer contenido"</span>.
+    <!-- Recorridos -->
+    <div class="max-w-3xl mx-auto mb-16 text-center">
+      <p class="font-serif text-3xl md:text-4xl font-black uppercase mb-6">Recorridos</p>
+
+      <p class="text-suave leading-relaxed max-w-xl mx-auto mb-8">
+        Quiero recordarles que pueden hacer el recorrido que ustedes quieran, a la hora que quieran
+        y con las distancias que ustedes quieran… Estos son los recorridos que yo voy a hacer, y los
+        dejo acá para que los que me quieran acompañar sepan por dónde vamos a ir.
+      </p>
+
+      <!-- Referencias de los mapas -->
+      <div class="text-suave text-sm mb-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+        <span class="text-crema font-semibold">Referencias:</span>
+        <span>📍 Punto de partida.</span>
+        <span>🏁 Punto de finalización.</span>
+        <span class="inline-flex items-center gap-1.5">
+          <img src="/images/recorridos/bar.png" alt="Bar Mother Focca" class="h-8 w-auto rounded-sm" />
+          Bar "Mother focca", punto de encuentro durante toda la jornada.
+        </span>
+      </div>
+
+      <p class="font-serif text-xl md:text-2xl font-black uppercase text-musgo mb-3">Natación</p>
+
+      <div class="text-suave text-sm max-w-xl mx-auto space-y-1">
+        <p>Comienzo a las 9:00 hs, donde únicamente las personas que estén autorizadas por la organización "Nadadores de montaña" son las que van a poder nadar.</p>
+        <p>Punto de encuentro: Mirador 2 - Dique Potrerillos.</p>
+        <p>
+          Dirección:
+          <a
+            href="https://www.google.com/maps/place/Mirador+2+-+Dique+de+Potrerillos/@-32.9921829,-69.1571114,15z/data=!4m6!3m5!1s0x967de900249dcd97:0xef51462ec6c1e366!8m2!3d-32.9919982!4d-69.1571425!16s%2Fg%2F11y3zp7tf6?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-musgo underline hover:text-hoja"
+          >Ver en Google Maps</a>
         </p>
       </div>
-      <div>
-        <p class="text-xs uppercase tracking-widest text-musgo mb-3 font-semibold">Mi objetivo</p>
-        <div class="w-12 h-px bg-tierra/50 mb-5 mx-auto"></div>
-        <p class="text-suave leading-relaxed">
-          Simple: <span class="text-crema font-semibold">terminar el desafío</span> e intentar
-          que todos la pasemos bien.
+
+      <figure class="w-[calc(50%-0.375rem)] sm:w-[calc(33.333%-0.5rem)] mx-auto my-6">
+        <img src="/images/recorridos/natacion.jpg" alt="Circuito de natación en el Dique Potrerillos" class="w-full rounded" />
+        <figcaption class="text-suave text-xs mt-2 leading-snug">Un circuito de 900 metros que se realizará 2 veces.</figcaption>
+        <p class="text-crema text-xs font-semibold mt-1">Total: 1,9 km</p>
+      </figure>
+
+      <p class="font-serif text-xl md:text-2xl font-black uppercase text-musgo mb-3">Ciclismo</p>
+
+      <div class="text-suave text-sm max-w-xl mx-auto space-y-1">
+        <p>Comienzo a las 10:30 am, un recorrido con muchas subidas y bajadas.</p>
+        <p>Punto de encuentro: Mirador 2 - Dique Potrerillos.</p>
+        <p>
+          Dirección:
+          <a
+            href="https://www.google.com/maps/place/Mirador+2+-+Dique+de+Potrerillos/@-32.9921829,-69.1571114,15z/data=!4m6!3m5!1s0x967de900249dcd97:0xef51462ec6c1e366!8m2!3d-32.9919982!4d-69.1571425!16s%2Fg%2F11y3zp7tf6?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-musgo underline hover:text-hoja"
+          >Ver en Google Maps</a>
         </p>
+      </div>
+
+      <!-- Mapas de los tramos (provisorio: vamos a acomodar tamaño/orden juntos) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 my-6">
+        {tramos.map((t) => (
+          <figure>
+            <img src={t.src} alt={t.alt} class="w-full rounded" />
+            {t.desc && <figcaption class="text-suave text-xs mt-2 leading-snug">{t.desc}</figcaption>}
+            {t.total && <p class="text-crema text-xs font-semibold mt-1">Total: {t.total}</p>}
+          </figure>
+        ))}
+      </div>
+
+      <p class="font-serif text-xl md:text-2xl font-black uppercase text-musgo mb-3">Carrera a pie</p>
+
+      <div class="text-suave text-sm max-w-xl mx-auto space-y-1">
+        <p>Comienzo aproximado entre las 15 y las 16 hs. Todos los tramos tienen un spot divertido… pero se me hizo muy difícil poder describirlo acá en la web, pero si me acompañás vas a poder disfrutarlo a full.</p>
+        <p>Punto de encuentro: Bar Mother Focca.</p>
+        <p>
+          Dirección:
+          <a
+            href="https://www.google.com/maps/place/Mother+Focca/@-32.972695,-69.1946611,14.07z/data=!4m6!3m5!1s0x967def1466f2f1f5:0x8244db9d08e3c8c6!8m2!3d-32.9745349!4d-69.1823488!16s%2Fg%2F11msgw4pv_?entry=ttu&g_ep=EgoyMDI2MDYyOC4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-musgo underline hover:text-hoja"
+          >Ver en Google Maps</a>
+        </p>
+      </div>
+
+      <!-- Mapas de la carrera a pie -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 my-6">
+        {carreras.map((t) => (
+          <figure>
+            <img src={t.src} alt={t.alt} class="w-full rounded" />
+            {t.desc && <figcaption class="text-suave text-xs mt-2 leading-snug">{t.desc}</figcaption>}
+            {t.total && <p class="text-crema text-xs font-semibold mt-1">Total: {t.total}</p>}
+          </figure>
+        ))}
       </div>
     </div>
 
@@ -68,7 +163,7 @@ const CONTACTO_MARCAS = 'https://wa.me/5492613657527'
         Sumate al desafío
       </h3>
       <p class="text-suave max-w-lg mx-auto mb-8 leading-relaxed">
-        Hagamos deporte juntos. ¡Entrá al grupo de WhatsApp y mantenete informado!
+        Hagamos deporte juntos. ¡Entrá al grupo de WhatsApp y participá el Sábado!
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
